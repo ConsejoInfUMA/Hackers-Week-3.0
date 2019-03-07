@@ -3,11 +3,17 @@
     <v-layout align-center row wrap>
       <v-flex>
         <section class="hero">
-          <h1 
-            class="display-4 text-xs-center"
-          >
-            Hackers &lt;&gt; Week
-          </h1>
+          <div class="texto text-xs-center">
+            <h1 
+              class="display-4"
+            >
+              Hackers &lt;&gt; Week
+            </h1>
+            <v-spacer />
+            <h3 class="headline">
+              Texto cambiante
+            </h3>
+          </div>
           <!--<particles /> -->
         </section> 
       </v-flex>
@@ -20,9 +26,8 @@
   height: 100%;
 }
 
-.hero-text {
-  position: absolute;
-  top: 40%;
+.texto {
+  background: #000000aa;
 }
 </style>
 

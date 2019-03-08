@@ -1,0 +1,37 @@
+<template>
+  <v-container
+    bg
+    fill-height
+    grid-list-md
+    text-xs-center
+  >
+    <v-layout
+      row 
+      wrap
+      align-center
+    >
+      <v-flex>
+        <h1
+          class="headline"
+        >
+          Esta p&aacute;gina es como las matr&iacute;culas en c&aacute;lculo...<br>Inexistente
+        </h1>
+        <nuxt-link 
+          to="/"
+        >
+          <h4
+            class="subheading"
+          >
+            Volver a la base rebelde
+          </h4>
+        </nuxt-link>
+        <br>
+        <h1
+          class="title"
+        >
+          404
+        </h1>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</template>

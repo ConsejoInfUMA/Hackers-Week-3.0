@@ -4,7 +4,7 @@
       <v-flex>
         <section class="hero">
           <div class="texto text-xs-center">
-            <h1 
+            <h1
               class="display-4"
             >
               Hackers &lt;&gt; Week
@@ -14,8 +14,8 @@
               Texto cambiante
             </h3>
           </div>
-          <!--<particles /> -->
-        </section> 
+          <particles />
+        </section>
       </v-flex>
     </v-layout>
   </v-container>
@@ -32,7 +32,6 @@
 </style>
 
 <script>
-/*
 import Particles from '~/components/Particles.vue'
 
 export default {
@@ -40,5 +39,4 @@ export default {
     Particles
   }
 }
-*/
 </script>

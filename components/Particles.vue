@@ -4,6 +4,24 @@
 
 
 <style>
+#particles {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-color: #062933;
+}
+
+#particles canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
 </style>
 
 <script>
@@ -21,7 +39,7 @@ export default {
       particlesJS('particles', {
         particles: {
           number: {
-            value: 100,
+            value: 70,
             density: {
               enable: true,
               value_area: 472.0061046122865

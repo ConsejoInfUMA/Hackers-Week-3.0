@@ -12,8 +12,8 @@
           </div>
         </section>
       </v-flex>
+      <particles />
     </v-layout>
-    <particles />
   </v-container>
 </template>
 

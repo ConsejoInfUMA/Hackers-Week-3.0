@@ -129,9 +129,12 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+
+/tags
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+

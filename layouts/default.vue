@@ -1,10 +1,8 @@
 <template>
   <v-app dark>
-    <div id="root">
-      <v-content>
-        <nuxt />
-      </v-content>
-    </div>
+    <v-content>
+      <nuxt />
+    </v-content>
   </v-app>
 </template>
 

@@ -9,7 +9,7 @@
         :key="conf.ponente"
         xs6
         sm4
-        md3
+        md4
       >
         <v-card class="ponente">
           <v-img 
@@ -26,6 +26,7 @@
           <ModalPonente
             :title="conf.ponente + ': ' + conf.titulo" 
             :desc="conf.desc" 
+            :url="conf.url"
           />
         </v-card>
       </v-flex>
@@ -54,28 +55,32 @@ export default {
         titulo: 'Titulo',
         foto: 'http://placekitten.com/300/300',
         desc: 'Descripcion',
-        time: 'Fecha y hora'
+        time: 'Fecha y hora',
+        url: 'https://google.com'
       },
       {
         ponente: 'Nombre',
         titulo: 'Titulo',
         foto: 'http://placekitten.com/300/300',
         desc: 'Descripcion',
-        time: 'Fecha y hora'
+        time: 'Fecha y hora',
+        url: 'url2'
       },
       {
         ponente: 'Nombre',
         titulo: 'Titulo',
         foto: 'http://placekitten.com/300/300',
         desc: 'Descripcion',
-        time: 'Fecha y hora'
+        time: 'Fecha y hora',
+        url: 'url'
       },
       {
         ponente: 'Nombre',
         titulo: 'Titulo',
         foto: 'http://placekitten.com/300/300',
         desc: 'Descripcion',
-        time: 'Fecha y hora'
+        time: 'Fecha y hora',
+        url: 'url'
       }
     ]
   })

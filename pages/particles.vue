@@ -4,12 +4,15 @@
       <v-flex>
         <section class="hero">
           <div class="texto text-xs-center">
-            <h1 class="hackers">
+            <h1 id="bigDevices" class="hidden-md-and-down hackers">
               HACKERS <span class="arrows">&lt;&gt;</span> WEEK
             </h1>
+            <h1 id="smallDevices" class="hidden-lg-and-up hackers">
+              HACKERS<br><span class="arrows">&lt;&gt;</span><br>WEEK
+            </h1>
             <v-spacer />
-            <h3 class="display-3">
-              A week to learn about <typed />
+            <h3 class="description">
+              A week to learn about <typed class="arrows" />
             </h3>
           </div>
         </section>
@@ -32,13 +35,13 @@
 }
 
 .description {
-  font-family: 'Nevis';
   font-size: 3.494em;
 }
 
 .arrows {
   color: #2196ba;
 }
+
 .hero {
   height: 100%;
 }

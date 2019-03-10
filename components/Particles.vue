@@ -9,7 +9,7 @@
   height: 100%;
   width: 100%;
   z-index: -10;
-  background-color: #062933;
+  background: radial-gradient(#062933, #010c0f); /*#062933*/
 }
 
 #particles canvas {
@@ -78,7 +78,7 @@ export default {
             random: true,
             anim: {
               enable: false,
-              speed: 40,
+              speed: 20,
               size_min: 0.1,
               sync: false
             }
@@ -92,7 +92,7 @@ export default {
           },
           move: {
             enable: true,
-            speed: 5,
+            speed: 1,
             direction: 'none',
             random: true,
             straight: false,

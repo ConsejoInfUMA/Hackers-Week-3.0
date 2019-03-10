@@ -1,30 +1,28 @@
 <template>
-  <div class="text-xs-center">
-    <div>
-      <v-btn
-        icon
-        flat
-        large
-        v-on="on"
-        @click="dialog = true"
-      >
-        <v-icon>
-          info
-        </v-icon>
-      </v-btn>
+  <div class="pb-2 pl-2 text-xs-center text-sm-left">
+    <v-layout align-center justify-space-around row />
+    <v-btn
+      color="primary"
+      v-on="on"
+      @click="dialog = true"
+    >
+      Info
+    </v-btn>
+    <a :href="url" no-prefetch="true">
       <v-btn
         color="primary"
       >
         Registro
       </v-btn>
-    </div>
+    </a>
+  
     <v-dialog
       v-model="dialog"
-      width="500"
+      width="640"
     >
       <v-card>
         <v-card-title
-          class="headline primary lighten-1"
+          class="headline primary"
           primary-title
         >
           {{ title }}
@@ -54,11 +52,15 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Name'
+      default: 'Title'
     },
     desc: {
       type: String,
-      default: 'Desc'
+      default: 'Description'
+    },
+    url: {
+      type: String,
+      default: 'url'
     }
   },
   data() {

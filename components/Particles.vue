@@ -2,7 +2,6 @@
   <div id="particles" />
 </template>
 
-
 <style>
 #particles {
   position: fixed;
@@ -26,6 +25,8 @@
 
 <script>
 export default {
+  name: 'Particles',
+
   /*  global particlesJS */
   mounted() {
     this.$nextTick(() => {

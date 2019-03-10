@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-// TODO arreglar esta guarrada
-import VueParticles from 'vue-particles'
-
-Vue.use(VueParticles)
 
 Vue.use(Vuetify, {
   theme: {

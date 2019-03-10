@@ -36,7 +36,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify', '~/plugins/particles'],
+  plugins: ['@/plugins/vuetify'],
 
   /*
   ** Nuxt.js modules
@@ -65,6 +65,11 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+        config.module.rules.push({
+          test: /\.styl$/,
+          loader: 'stylus-loader',
           exclude: /(node_modules)/
         })
       }

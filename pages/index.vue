@@ -1,8 +1,8 @@
 <template>
   <v-container fluid fill-height pa-0>
-    <v-layout align-center row wrap>
+    <v-layout class="hero" align-center row wrap>
       <v-flex>
-        <section class="hero">
+        <section>
           <div class="heading-text text-xs-center">
             <hackers-heading />
             <v-spacer />
@@ -16,9 +16,6 @@
     </v-layout>
   </v-container>
 </template>
-
-<style>
-</style>
 
 <script>
 import Particles from '~/components/Particles.vue'

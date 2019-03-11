@@ -1,7 +1,20 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
+import Vuetify, {
+  VApp,
+  VContent,
+  VContainer,
+  VLayout,
+  VFlex
+} from 'vuetify/lib'
 
 Vue.use(Vuetify, {
+  components: {
+    VApp,
+    VContent,
+    VContainer,
+    VLayout,
+    VFlex
+  },
   theme: {
     primary: '#2196BA',
     accent: '#FFFFFF',

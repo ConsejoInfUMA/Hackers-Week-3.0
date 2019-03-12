@@ -1,20 +1,18 @@
 <template>
-  <v-container fluid fill-height pa-0>
-    <v-layout class="hero" align-center row wrap>
-      <v-flex>
-        <section>
-          <div class="heading-text text-xs-center">
-            <hackers-heading />
-            <v-spacer />
-            <h3 class="hackers-description">
-              A week to learn about <typed class="hackers-arrows" />
-            </h3>
-          </div>
-        </section>
-      </v-flex>
-      <particles />
-    </v-layout>
-  </v-container>
+  <v-layout align-center justify-center fill-height>
+    <v-flex>
+      <section>
+        <div class="heading-text text-xs-center">
+          <hackers-heading />
+          <v-spacer />
+          <h3 class="hackers-description">
+            A week to learn about <typed class="hackers-arrows" />
+          </h3>
+        </div>
+      </section>
+    </v-flex>
+    <particles />
+  </v-layout>
 </template>
 
 <script>

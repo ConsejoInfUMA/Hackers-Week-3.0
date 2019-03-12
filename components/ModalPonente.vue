@@ -1,6 +1,5 @@
 <template>
-  <div class="pb-2 pl-2 text-xs-center text-sm-left">
-    <v-layout align-center justify-space-around row />
+  <v-layout align-center justify-center row>
     <v-btn
       color="primary"
       v-on="on"
@@ -8,17 +7,17 @@
     >
       Info
     </v-btn>
-    <a :href="url" no-prefetch="true">
-      <v-btn
-        color="primary"
-      >
-        Registro
-      </v-btn>
-    </a>
+    <v-btn
+      :href="url"
+      color="primary"
+    >
+      Registro
+    </v-btn>
   
     <v-dialog
       v-model="dialog"
-      width="640"
+      width="50%"
+      height="60%"
     >
       <v-card>
         <v-card-title
@@ -44,7 +43,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </div>
+  </v-layout>
 </template>
 
 <script>

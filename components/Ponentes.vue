@@ -1,9 +1,6 @@
 <template>
-  <v-container
-    fluid
-    grid-list-xl
-  >
-    <v-layout row wrap>
+  <v-container grid-list-md>
+    <v-layout align-center justify-space-around row>
       <v-flex
         v-for="conf in conferencias"
         :key="conf.ponente"
@@ -11,17 +8,14 @@
         sm4
         md4
       >
-        <v-card class="ponente">
+        <v-card flat tile class="ponente">
           <v-img 
             :src="conf.foto"
-            max-width="20em"
-            max-height="20em"
           />
           <v-card-title>
-            <div>
-              <span class="headline">{{ conf.ponente }}</span><br>
-              <span class="subheading">{{ conf.titulo }}</span>
-            </div>
+            <h1 class="headline">
+              {{ conf.titulo }}
+            </h1>
           </v-card-title>
           <ModalPonente
             :title="conf.ponente + ': ' + conf.titulo" 

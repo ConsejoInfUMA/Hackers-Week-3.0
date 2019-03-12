@@ -1,11 +1,11 @@
 <template>
-  <v-layout wrap align-space-around>
+  <v-layout align-center justify-center>
     <v-flex
       color="primary"
       fill-height
       xs12
-      sm8
-      md8
+      sm10
+      md10
     >
       <v-card>
         <v-card-title class="display-3">

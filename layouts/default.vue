@@ -1,12 +1,14 @@
 <template>
-  <v-app dark>
-    <v-content>
-      <v-container fill-height fluid pa-0>
-        <particles />
-        <nuxt />
-      </v-container>
-    </v-content>
-  </v-app>
+  <div>
+    <particles />
+    <v-app dark>
+      <v-content>
+        <v-container fill-height fluid pa-0>
+          <nuxt />
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
 </template>
 
 <script>

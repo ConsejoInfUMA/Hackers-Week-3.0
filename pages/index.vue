@@ -11,18 +11,15 @@
         </div>
       </section>
     </v-flex>
-    <particles />
   </v-layout>
 </template>
 
 <script>
-import Particles from '~/components/Particles.vue'
 import Typed from '~/components/Typed.vue'
 import HackersHeading from '~/components/HackersHeading.vue'
 
 export default {
   components: {
-    Particles,
     Typed,
     HackersHeading
   }

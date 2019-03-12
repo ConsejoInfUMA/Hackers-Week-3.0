@@ -1,15 +1,24 @@
 <template>
-  <v-container grid-list-md>
-    <v-layout align-center justify-space-around row>
+  <v-container
+    grid-list-md
+    fluid
+    fill-height
+  >
+    <v-layout
+      align-center
+      row
+      wrap
+    >
       <v-flex
         v-for="conf in conferencias"
         :key="conf.ponente"
         xs6
-        sm4
-        md4
+        sm12
+        md6
+        lg3
       >
-        <v-card flat tile class="ponente">
-          <v-img 
+        <v-card flat color="secondary" tile class="ponente pa-2">
+          <v-img
             :src="conf.foto"
           />
           <v-card-title>

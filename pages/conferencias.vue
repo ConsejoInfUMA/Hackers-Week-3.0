@@ -1,7 +1,5 @@
 <template>
-  <v-container
-    fluid
-  >
+  <v-container px-0 fill-height elevation-24>
     <v-layout
       row
       justify-center
@@ -9,9 +7,11 @@
       fill-height
     >
       <v-flex
+        color="primary"
+        fill-height
         xs12
         sm8
-        md6
+        md8
       >
         <v-card>
           <v-card-title class="display-3">
@@ -26,8 +26,8 @@
               >documentation</a>.
             </p>
           </v-card-text>
+          <ponentes />
         </v-card>
-        <ponentes />
       </v-flex>
     </v-layout>
   </v-container>

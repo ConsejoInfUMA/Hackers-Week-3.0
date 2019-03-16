@@ -13,36 +13,30 @@
         v-for="conf in conferencias"
         :key="conf.ponente"
         xs6
-        sm12
+        sm6
         md6
-        lg3
+        lg4
+        xl3
       >
-        <v-card flat color="secondary" tile class="ponente pa-2">
-          <v-img
+        <v-card :color="conf.bg" max-height="30em" tile class="pb-3 ponente">
+          <v-img 
             :src="conf.foto"
           />
-          <v-card-title>
-            <h1 class="headline">
+          <v-card-title class="justify-center">
+            <h1 :style="'height: 2em; color: ' + conf.sc" class="title text-xs-center">
               {{ conf.titulo }}
             </h1>
           </v-card-title>
-          <ModalPonente
-            :title="conf.ponente + ': ' + conf.titulo" 
-            :desc="conf.desc" 
-            :url="conf.url"
-          />
+          <v-card-actions>
+            <ModalPonente 
+              :conf="conf"
+            />
+          </v-card-actions>
         </v-card>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
-
-<style>
-.conferenciante {
-  margin: auto !important;
-}
-</style>
-
 
 <script>
 import ModalPonente from '~/components/ModalPonente.vue'
@@ -52,40 +46,73 @@ export default {
     ModalPonente
   },
   data: () => ({
+    // TODO: Estructura e info
     conferencias: [
       {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
-        desc: 'Descripcion',
+        ponente: 'JavaScript',
+        titulo: 'Ejemplo Javascript',
+        desc: 'Descripcion sobre JavaSript',
+        tech: ['HTML', 'CSS', 'JS'],
         time: 'Fecha y hora',
+        foto:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
+        bg: '#f7df1e',
+        sc: '#000',
         url: 'https://google.com'
       },
       {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
-        desc: 'Descripcion',
+        ponente: 'C#',
+        titulo: 'Titulo muy largo de C#',
+        desc: 'Descripcion sobre C#',
+        tech: [],
         time: 'Fecha y hora',
+        foto:
+          'https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png',
+        bg: '#fff',
+        sc: '#9039a7',
         url: 'url2'
       },
       {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
+        ponente: 'Node.js',
+        titulo: 'Titulo muy muy largo de Node.js',
         desc: 'Descripcion',
+        tech: [],
         time: 'Fecha y hora',
-        url: 'url'
+        foto:
+          'https://cdn1.altiria.com/wp-content/uploads/2017/03/node-logo.jpg',
+        bg: '#fff',
+        sc: '#83cd29',
+        url: 'url3'
       },
       {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
+        ponente: 'Profesora',
+        titulo: 'Robótica Médica',
         desc: 'Descripcion',
+        tech: [],
         time: 'Fecha y hora',
-        url: 'url'
+        foto:
+          'https://pbs.twimg.com/profile_images/589125299130003456/fuODjrn6_400x400.png',
+        bg: '#fff',
+        sc: '#0099ff',
+        url: 'url4'
       }
-    ]
+    ],
+    return: { dialog: false }
   })
 }
+
+/* Plantilla
+{
+  ponente: '',
+  titulo: '',
+  desc: '',
+  tech: [],
+  time: '',
+  foto:
+    '',
+  bg: '#',
+  sc: '#',
+  url: ''
+}
+*/
 </script>

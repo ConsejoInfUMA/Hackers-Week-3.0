@@ -1,5 +1,5 @@
 <template>
-  <v-container px-0 fill-height elevation-24>
+  <v-container px-0 fill-height>
     <v-layout
       row
       justify-center
@@ -14,8 +14,10 @@
         md8
       >
         <v-card>
-          <v-card-title class="display-3">
-            Conferencias
+          <v-card-title>
+            <h1 class="display-4">
+              Conferencias
+            </h1>
           </v-card-title>
           <v-card-text>
             <p>Este a&ntilde;o contamos con <b>X</b> conferencias.  Las conferencias tendrán lugar en <b>Lugar</b>, aquí tienes un <a>horario</a> m&aacute;s detallado</p>

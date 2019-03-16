@@ -1,40 +1,51 @@
 <template>
-  <v-layout align-center justify-center row>
+  <v-layout align-end justify-center row>
     <v-btn
-      color="primary"
-      v-on="on"
+      :color="conf.sc"
       @click="dialog = true"
     >
       Info
     </v-btn>
     <v-btn
-      :href="url"
-      color="primary"
+      :href=" conf.url"
+      :color="conf.sc"
     >
       Registro
     </v-btn>
-  
     <v-dialog
       v-model="dialog"
+      light
       width="50%"
     >
       <v-card>
         <v-card-title
-          class="headline primary"
+          class="display-2"
+          :style="'background:' + conf.bg + ';'"
           primary-title
         >
-          {{ title }}
+          {{ conf.titulo }}
         </v-card-title>
 
         <v-card-text>
-          {{ desc }}
+          <h4 class="display-1">
+            Descripción
+          </h4>
+          {{ conf.desc }}
         </v-card-text>
-
+        <v-card-text>
+          <h4 class="display-1">
+            Tecnologías usadas
+          </h4>
+          <ul v-for="(item, index) in conf.tech" :key="index">
+            <li>{{ item }}</li>
+          </ul>
+        </v-card-text>
         <v-divider />
         <v-card-actions>
           <v-spacer />
           <v-btn
-            color="primary"
+            style="color: #fff"
+            :color="conf.sc"
             @click="dialog = false"
           >
             Cerrar
@@ -48,17 +59,11 @@
 <script>
 export default {
   props: {
-    title: {
-      type: String,
-      default: 'Title'
-    },
-    desc: {
-      type: String,
-      default: 'Description'
-    },
-    url: {
-      type: String,
-      default: 'url'
+    conf: {
+      type: Object,
+      default: () => {
+        return 0
+      }
     }
   },
   data() {

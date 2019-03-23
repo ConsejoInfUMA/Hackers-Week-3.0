@@ -1,40 +1,60 @@
 <template>
-  <v-layout align-center justify-center row>
+  <v-layout align-end justify-center row>
     <v-btn
-      color="primary"
-      v-on="on"
+      :color="conf.sc"
       @click="dialog = true"
     >
       Info
     </v-btn>
     <v-btn
-      :href="url"
-      color="primary"
+      target="_blank"
+      :href=" conf.url"
+      :color="conf.sc"
     >
       Registro
     </v-btn>
-  
     <v-dialog
       v-model="dialog"
+      light
       width="50%"
     >
       <v-card>
         <v-card-title
-          class="headline primary"
-          primary-title
+          class="text-xs-center justify-center"
+          :style="'color: ' + conf.bg + '; background:' + conf.sc + ';'"
         >
-          {{ title }}
+          <h1 
+            class="headline"
+          >
+            {{ conf.ponente }} presenta:<br><br>
+            {{ conf.titulo }}
+          </h1>
         </v-card-title>
 
         <v-card-text>
-          {{ desc }}
+          <h4 class="headline">
+            Descripción
+          </h4>
+          <p class="subheading">
+            {{ conf.desc }}
+          </p>
         </v-card-text>
-
+        <v-card-text>
+          <h4 v-if="conf.tech.length != 0" class="headline">
+            Tecnologías usadas
+          </h4>
+          <ul v-for="(item, index) in conf.tech" :key="index">
+            <li class="subheading">
+              {{ item }}
+            </li>
+          </ul>
+        </v-card-text>
         <v-divider />
         <v-card-actions>
           <v-spacer />
           <v-btn
-            color="primary"
+            style="color: #fff"
+            :color="conf.sc"
             @click="dialog = false"
           >
             Cerrar
@@ -48,17 +68,11 @@
 <script>
 export default {
   props: {
-    title: {
-      type: String,
-      default: 'Title'
-    },
-    desc: {
-      type: String,
-      default: 'Description'
-    },
-    url: {
-      type: String,
-      default: 'url'
+    conf: {
+      type: Object,
+      default: () => {
+        return 0
+      }
     }
   },
   data() {

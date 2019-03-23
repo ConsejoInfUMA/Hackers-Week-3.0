@@ -10,39 +10,33 @@
       wrap
     >
       <v-flex
-        v-for="conf in conferencias"
+        v-for="conf in datos"
         :key="conf.ponente"
         xs6
-        sm12
+        sm6
         md6
-        lg3
+        lg4
+        xl3
       >
-        <v-card flat color="secondary" tile class="ponente pa-2">
-          <v-img
+        <v-card :color="conf.bg" max-height="100%" tile class="pb-3 ponente">
+          <v-img 
             :src="conf.foto"
           />
-          <v-card-title>
-            <h1 class="headline">
+          <v-card-title class="justify-center">
+            <h1 :style="'min-height: 4em; color: ' + conf.sc" class="title text-xs-center">
               {{ conf.titulo }}
             </h1>
           </v-card-title>
-          <ModalPonente
-            :title="conf.ponente + ': ' + conf.titulo" 
-            :desc="conf.desc" 
-            :url="conf.url"
-          />
+          <v-card-actions>
+            <ModalPonente 
+              :conf="conf"
+            />
+          </v-card-actions>
         </v-card>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
-
-<style>
-.conferenciante {
-  margin: auto !important;
-}
-</style>
-
 
 <script>
 import ModalPonente from '~/components/ModalPonente.vue'
@@ -51,41 +45,31 @@ export default {
   components: {
     ModalPonente
   },
-  data: () => ({
-    conferencias: [
-      {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
-        desc: 'Descripcion',
-        time: 'Fecha y hora',
-        url: 'https://google.com'
-      },
-      {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
-        desc: 'Descripcion',
-        time: 'Fecha y hora',
-        url: 'url2'
-      },
-      {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
-        desc: 'Descripcion',
-        time: 'Fecha y hora',
-        url: 'url'
-      },
-      {
-        ponente: 'Nombre',
-        titulo: 'Titulo',
-        foto: 'http://placekitten.com/300/300',
-        desc: 'Descripcion',
-        time: 'Fecha y hora',
-        url: 'url'
+  props: {
+    datos: {
+      type: Object,
+      default: () => {
+        return 0
       }
-    ]
+    }
+  },
+  data: () => ({
+    return: { dialog: false }
   })
 }
+
+/* Plantilla
+{
+  ponente: '',
+  titulo: '',
+  desc: '',
+  tech: [],
+  time: '',
+  foto:
+    '',
+  bg: '#',
+  sc: '#',
+  url: ''
+}
+*/
 </script>

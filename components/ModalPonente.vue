@@ -7,6 +7,7 @@
       Info
     </v-btn>
     <v-btn
+      target="_blank"
       :href=" conf.url"
       :color="conf.sc"
     >

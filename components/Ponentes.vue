@@ -12,8 +12,8 @@
       <v-flex
         v-for="conf in datos"
         :key="conf.ponente"
-        xs12
-        sm12
+        xs6
+        sm6
         md6
         lg4
         xl3

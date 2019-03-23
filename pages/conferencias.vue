@@ -21,18 +21,12 @@
             <h1 class="display-3 hidden-sm-and-down">
               Conferencias
             </h1>
-            <h1 class="display-1 hidden-md-and-up">
+            <h1 class="display-2 hidden-md-and-up">
               Conferencias
             </h1>
           </v-card-title>
           <v-card-text>
             <p>Este a&ntilde;o contamos con <b>X</b> conferencias.  Las conferencias tendrán lugar en <b>Lugar</b>, aquí tienes un <a>horario</a> m&aacute;s detallado</p>
-            <p>
-              For more information on Vuetify, check out the <a
-                href="https://vuetifyjs.com"
-                target="_blank"
-              >documentation</a>.
-            </p>
           </v-card-text>
           <ponentes
             :datos="conferencias"

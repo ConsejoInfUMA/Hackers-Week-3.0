@@ -18,12 +18,12 @@
         lg4
         xl3
       >
-        <v-card :color="conf.bg" max-height="30em" tile class="pb-3 ponente">
+        <v-card :color="conf.bg" max-height="100%" tile class="pb-3 ponente">
           <v-img 
             :src="conf.foto"
           />
           <v-card-title class="justify-center">
-            <h1 :style="'height: 2em; color: ' + conf.sc" class="title text-xs-center">
+            <h1 :style="'min-height: 4em; color: ' + conf.sc" class="title text-xs-center">
               {{ conf.titulo }}
             </h1>
           </v-card-title>
@@ -55,8 +55,8 @@ export default {
         tech: ['HTML', 'CSS', 'JS'],
         time: 'Fecha y hora',
         foto:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
-        bg: '#f7df1e',
+          'https://upload.wikimedia.org/wikipedia/commons/c/ce/Unofficial_JavaScript_logo.svg',
+        bg: '#fff',
         sc: '#000',
         url: 'https://google.com'
       },
@@ -73,23 +73,26 @@ export default {
         url: 'url2'
       },
       {
-        ponente: 'Node.js',
-        titulo: 'Titulo muy muy largo de Node.js',
-        desc: 'Descripcion',
+        ponente: 'Fernando Vidal',
+        titulo:
+          'Tecnologías de asistencia a personas con diversidad funcional: Compromiso y oportunidad',
+        desc:
+          'El aumento de la esperanza de vida está incrementando notablemente el colectivo que necesita ayuda para las tareas de su vida diaria.  A esto hay que añadir las personas que, a lo largo de su vida, tienen limitaciones cognitivas, sensoriales, o motoras, ya sean permanentes o transitorias.  Aunque la compañía humana es insustituible, las tecnologías de asistencia pueden ayudar a superar estas limitaciones y a aumentar la autonomía de las personas afectadas.  Esta charla expone el papel de estas tecnologías, y muestra algunas iniciativas de docencia e investigación relacionadas con ellas en la Universidad de Málaga',
         tech: [],
-        time: 'Fecha y hora',
+        time: 'Martes 9, 11:30',
         foto:
-          'https://cdn1.altiria.com/wp-content/uploads/2017/03/node-logo.jpg',
+          'https://pbs.twimg.com/profile_images/589125299130003456/fuODjrn6_400x400.png',
         bg: '#fff',
-        sc: '#83cd29',
-        url: 'url3'
+        sc: '#0099ff',
+        url: 'url4'
       },
       {
-        ponente: 'Profesora',
-        titulo: 'Robótica Médica',
-        desc: 'Descripcion',
+        ponente: 'Irene Rivas Blanco',
+        titulo: 'Dispositivos intraabdominales para robótica quirúrgica',
+        desc:
+          'Hoy en día el uso de robots dentro de los quirófanos es una realidad cotidiana en numerosos hospitales del mundo.  En esta charla se dará una visión general de los robots más utilizados en el ámbito qurúrgico, y se profundizará en los dispositivos intraabdominales, también conocidos como mini-robots, que dan solución a los problemas planteados por las técnicas quirúrgicas menos invasivas.',
         tech: [],
-        time: 'Fecha y hora',
+        time: 'Martes 9, 11:30',
         foto:
           'https://pbs.twimg.com/profile_images/589125299130003456/fuODjrn6_400x400.png',
         bg: '#fff',

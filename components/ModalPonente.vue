@@ -19,25 +19,33 @@
     >
       <v-card>
         <v-card-title
-          class="display-2"
-          :style="'background:' + conf.bg + ';'"
-          primary-title
+          class="text-xs-center justify-center"
+          :style="'color: ' + conf.bg + '; background:' + conf.sc + ';'"
         >
-          {{ conf.titulo }}
+          <h1 
+            class="headline"
+          >
+            {{ conf.ponente }} presenta:<br><br>
+            {{ conf.titulo }}
+          </h1>
         </v-card-title>
 
         <v-card-text>
-          <h4 class="display-1">
+          <h4 class="headline">
             Descripción
           </h4>
-          {{ conf.desc }}
+          <p class="subheading">
+            {{ conf.desc }}
+          </p>
         </v-card-text>
         <v-card-text>
-          <h4 class="display-1">
+          <h4 v-if="conf.tech.length != 0" class="headline">
             Tecnologías usadas
           </h4>
           <ul v-for="(item, index) in conf.tech" :key="index">
-            <li>{{ item }}</li>
+            <li class="subheading">
+              {{ item }}
+            </li>
           </ul>
         </v-card-text>
         <v-divider />

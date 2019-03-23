@@ -12,19 +12,19 @@
       <v-flex
         v-for="conf in datos"
         :key="conf.ponente"
-        xs6
-        sm6
+        xs12
+        sm12
         md6
         lg4
         xl3
       >
-        <v-card :color="conf.bg" max-height="100%" tile class="pb-3 ponente">
-          <v-img 
+        <v-card :color="conf.bg" height="43vh" tile class="pb-3 ponente">
+          <v-img
             :src="conf.foto"
           />
           <v-card-title class="justify-center">
-            <h1 :style="'min-height: 4em; color: ' + conf.sc" class="title text-xs-center">
-              {{ conf.titulo }}
+            <h1 :style="'height: 6.5vh; overflow: hidden; color: ' + conf.sc" class="title text-xs-center">
+              {{ conf.tituloCorto }}
             </h1>
           </v-card-title>
           <v-card-actions>

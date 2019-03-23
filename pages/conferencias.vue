@@ -19,10 +19,10 @@
         <v-card>
           <v-card-title>
             <h1 class="display-3 hidden-sm-and-down">
-              Conferencias
+              Conferencias Test g
             </h1>
             <h1 class="display-2 hidden-md-and-up">
-              Conferencias
+              Conferencias Test p
             </h1>
           </v-card-title>
           <v-card-text>

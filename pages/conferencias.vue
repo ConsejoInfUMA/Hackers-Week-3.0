@@ -5,6 +5,9 @@
       justify-center
       align-center
       fill-height
+      xs12
+      sm10
+      md10
     >
       <v-flex
         color="primary"

@@ -2,16 +2,7 @@
   <div id="particles" />
 </template>
 
-
 <style>
-#particles {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -10;
-  background: radial-gradient(#062933, #010c0f); /*#062933*/
-}
-
 #particles canvas {
   display: block;
   vertical-align: bottom;
@@ -22,10 +13,22 @@
   -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
   transition: opacity 0.8s ease, transform 1.4s ease;
 }
+
+#particles {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background: radial-gradient(#062933, #010c0f); /*#062933*/
+}
 </style>
 
 <script>
 export default {
+  name: 'Particles',
+
   /*  global particlesJS */
   mounted() {
     this.$nextTick(() => {

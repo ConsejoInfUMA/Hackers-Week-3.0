@@ -1,13 +1,24 @@
 <template>
-  <v-app dark>
-    <v-content>
-      <nuxt />
-    </v-content>
-  </v-app>
+  <div>
+    <particles />
+    <v-app dark>
+      <v-content>
+        <v-container fill-height fluid pa-0>
+          <nuxt />
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
 </template>
 
 <script>
+import Particles from '~/components/Particles.vue'
+
 export default {
+  components: {
+    Particles
+  },
+
   data() {
     return {
       clipped: false,

@@ -4,7 +4,12 @@
     <div id="typed-strings">
       <p>^250DevOps^750</p>
       <p>^250Functional Programming^500</p>
+      <p>^250Quantum Computing^500</p>
+      <p>^250Reactive Programming^500</p>
       <p>^250Artificial Intelligence^500</p>
+      <p>^250Videogames development^500</p>
+      <p>^250Frontend development^500</p>
+      <p>^250Security and Hacking^500</p>
       <p>^250Software Engineering^500</p>
     </div>
     <span id="typed" />

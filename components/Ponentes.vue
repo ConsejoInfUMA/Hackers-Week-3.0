@@ -6,29 +6,31 @@
   >
     <v-layout
       align-center
+      justify-center
       row
       wrap
     >
       <v-flex
         v-for="conf in datos"
         :key="conf.ponente"
-        xs6
-        sm6
+        xs10
+        sm10
         md6
         lg4
         xl3
       >
-        <v-card :color="conf.bg" height="43vh" tile class="pb-3 ponente">
+        <v-card :color="conf.bg" tile class="pb-3 ponente">
           <v-img
+            height="20em"
             :src="conf.foto"
           />
           <v-card-title class="justify-center">
-            <h1 :style="'height: 6.5vh; overflow: hidden; color: ' + conf.sc" class="title text-xs-center">
+            <h1 :style="'height: 3em; overflow: hidden; color: ' + conf.sc" class="title text-xs-center">
               {{ conf.tituloCorto }}
             </h1>
           </v-card-title>
           <v-card-actions>
-            <ModalPonente 
+            <ModalPonente
               :conf="conf"
             />
           </v-card-actions>

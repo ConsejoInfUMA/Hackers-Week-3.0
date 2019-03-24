@@ -1,14 +1,12 @@
 <template>
   <v-layout align-end justify-center row>
     <v-btn
-      small
       :color="conf.sc"
       @click="dialog = true"
     >
       Info
     </v-btn>
     <v-btn
-      small
       target="_blank"
       :href=" conf.url"
       :color="conf.sc"

@@ -3,6 +3,7 @@
     <particles />
     <v-app dark>
       <v-content>
+        <NavBar />
         <v-container fill-height fluid pa-0>
           <nuxt />
         </v-container>
@@ -13,10 +14,12 @@
 
 <script>
 import Particles from '~/components/Particles.vue'
+import NavBar from '~/components/NavBar.vue'
 
 export default {
   components: {
-    Particles
+    Particles,
+    NavBar
   },
 
   data() {

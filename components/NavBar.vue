@@ -1,14 +1,14 @@
 <template>
-  <v-toolbar class="navbar">
+  <v-toolbar dense class="navbar">
     <v-toolbar-items>
-      <v-btn>
-        Link One
+      <v-btn flat href="/">
+        Pagina Principal
       </v-btn>
-      <v-btn>
-        Link Two
+      <v-btn flat dense href="conferencias">
+        Conferencias
       </v-btn>
-      <v-btn>
-        Link Three
+      <v-btn flat dense href="talleres">
+        Talleres
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
@@ -16,7 +16,9 @@
 
 <style>
 .navbar {
-  position: fixed;
+  background: rgba(0, 0, 0, 0);
+  position: sticky;
+  height: 5vh !important;
   z-index: 10;
   top: 0;
 }

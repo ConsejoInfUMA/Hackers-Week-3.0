@@ -1,5 +1,5 @@
 <template>
-  <v-container fill-height>
+  <v-container fluid fill-height>
     <v-layout
       row
       justify-center

@@ -1,7 +1,6 @@
 <template>
   <v-layout align-center justify-center fill-height>
     <v-flex>
-      <NavBar />
       <section>
         <v-layout align-center justify-center column fill-height>
           <div class="heading-text text-xs-center">
@@ -24,7 +23,7 @@
 
 <style>
 section {
-  height: 100vh;
+  height: 93vh;
 }
 
 .heading-text {
@@ -35,13 +34,11 @@ section {
 
 <script>
 import Typed from '~/components/Typed.vue'
-import NavBar from '~/components/NavBar.vue'
 import HackersHeading from '~/components/HackersHeading.vue'
 
 export default {
   components: {
     Typed,
-    NavBar,
     HackersHeading
   }
 }

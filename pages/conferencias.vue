@@ -91,10 +91,10 @@ export default {
       },
       {
         ponente: 'Irene Rivas Blanco',
-        titulo: 'Dispositivos intraabdominales para robótica quirúrgica',
-        tituloCorto: 'Dispositivos intraabdominales para robótica quirúrgica',
+        titulo: 'Robótica y medicina',
+        tituloCorto: 'Robótica y medicina: Una pareja de hecho',
         desc:
-          'Hoy en día el uso de robots dentro de los quirófanos es una realidad cotidiana en numerosos hospitales del mundo.  En esta charla se dará una visión general de los robots más utilizados en el ámbito qurúrgico, y se profundizará en los dispositivos intraabdominales, también conocidos como mini-robots, que dan solución a los problemas planteados por las técnicas quirúrgicas menos invasivas.',
+          'Hoy en día el uso de robots dentro de los quirófanos es una realidad cotidiana en numerosos hospitales del mundo. En esta charla se dará un repaso por la historia de los sistemas robóticos aplicados a medicina, y se mostrarán las investigaciones realizadas en este campo en el grupo de robótica médica de la UMA.',
         tech: [],
         time: 'Martes 9, 11:30',
         foto:

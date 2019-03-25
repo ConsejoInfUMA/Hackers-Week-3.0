@@ -21,7 +21,7 @@
       >
         <v-card :color="conf.bg" tile class="pb-3 ponente">
           <v-img
-            height="20em"
+            height="19em"
             :src="conf.foto"
           />
           <v-card-title class="justify-center">

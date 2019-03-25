@@ -14,6 +14,3 @@ export default {
   name: 'HackersHeading'
 }
 </script>
-
-<style scoped>
-</style>

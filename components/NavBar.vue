@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar dense class="navbar">
+  <v-toolbar color="transparent" fixed flat dense class="navbar">
     <v-toolbar-items>
       <v-btn flat href="/">
         Pagina Principal
@@ -17,8 +17,7 @@
 <style>
 .navbar {
   background: rgba(0, 0, 0, 0);
-  position: sticky;
-  height: 5vh !important;
+  height: 3.5em;
   z-index: 10;
   top: 0;
 }

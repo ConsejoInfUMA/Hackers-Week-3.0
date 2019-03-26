@@ -1,7 +1,7 @@
 <template>
   <v-layout align-center justify-center fill-height>
     <v-flex>
-      <section>
+      <section class="hero">
         <v-layout align-center justify-center column fill-height>
           <div class="heading-text text-xs-center">
             <hackers-heading />
@@ -23,7 +23,11 @@
 
 <style>
 section {
-  height: 93vh;
+  height: 95vh;
+}
+
+.hero {
+  height: 100vh;
 }
 
 .heading-text {

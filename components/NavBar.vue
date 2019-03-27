@@ -1,13 +1,13 @@
 <template>
-  <v-toolbar color="transparent" fixed flat dense class="navbar">
+  <v-toolbar color="transparent" flat dense class="navbar">
     <v-toolbar-items>
-      <v-btn flat href="/">
+      <v-btn class="navItem" flat href="/">
         Pagina Principal
       </v-btn>
-      <v-btn flat dense href="conferencias">
+      <v-btn class="navItem" flat dense href="conferencias">
         Conferencias
       </v-btn>
-      <v-btn flat dense href="talleres">
+      <v-btn class="navItem" flat dense href="talleres">
         Talleres
       </v-btn>
     </v-toolbar-items>
@@ -16,12 +16,13 @@
 
 <style>
 .navbar {
-  background: rgba(0, 0, 0, 0);
-  height: 3.5em;
+  position: sticky;
+  height: 3vh;
   z-index: 10;
-  top: 0;
+  background: red;
 }
 </style>
+
 
 <script>
 export default {

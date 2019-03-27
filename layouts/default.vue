@@ -27,6 +27,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      // Esto hace falta?
       items: [
         {
           icon: 'apps',

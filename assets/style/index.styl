@@ -1,20 +1,44 @@
 @font-face
   font-family: Nevis
-  src: url('~assets/nevis.ttf')
+  src: url('../fonts/nevis.ttf')
   font-weight: bold
 
-.hackers-heading
-  font-family: 'Nevis', fantasy
-  font-size: 6.989em
+section
+  height: 94vh
 
-.hackers-description
-  font-size: 3.494em
+
+@media only screen and (max-width: 600px) // Movil
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 2.5em
+  .hackers-description
+    font-size: 1.2em
+  .navItem
+    font-size: 0.85em
+
+@media only screen and (min-width: 600px) and (max-width: 1264px) // Medio
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 5em
+  .hackers-description
+    font-size: 3em
+  .navItem
+    font-size: 1em
+
+@media only screen and (min-width: 1264px) // Escritorio
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 7em
+  .hackers-description
+    font-size: 3.5em
+  .navItem
+    font-size: 1em
 
 .hackers-arrows
   color: #2196ba
 
 .hero
-  height: 100%
+  height: 100vh
 
 .heading-text
   background: #00000099

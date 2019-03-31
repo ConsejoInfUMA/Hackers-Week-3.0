@@ -1,17 +1,11 @@
 <template>
-  <v-layout align-center justify-center fill-height>
+  <v-layout align-center justify-center column fill-height>
     <v-flex>
-      <section class="hero">
-        <v-layout align-center justify-center column fill-height>
-          <div class="heading-text text-xs-center">
-            <hackers-heading />
-          </div>
-        </v-layout>
-      </section>
       <section>
-        <v-card>
-          <v-card-title><h1>So cool</h1></v-card-title>
-        </v-card>
+        <v-layout align-center justify-center column hero>
+          <hackers-heading />
+          <Patrocinios class="pa-4" />
+        </v-layout>
       </section>
     </v-flex>
   </v-layout>
@@ -19,10 +13,12 @@
 
 <script>
 import HackersHeading from '~/components/HackersHeading.vue'
+import Patrocinios from '~/components/Patrocinios.vue'
 
 export default {
   components: {
-    HackersHeading
+    HackersHeading,
+    Patrocinios
   }
 }
 </script>

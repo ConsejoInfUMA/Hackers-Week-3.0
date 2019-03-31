@@ -2,26 +2,71 @@
 @require '~vuetify/src/stylus/app.styl'
 
 @font-face
-  font-family Nevis
-  src url('~assets/fonts/nevis.ttf')
-  font-weight bold
+  font-family: Nevis
+  src: url('../fonts/nevis.ttf')
 
-.hackers-heading
-  font-family 'Nevis', fantasy
-  font-size 6.989em
-
-.hackers-mobile-heading
-  font-family 'Nevis', fantasy
-  font-size 5em
-
-.hackers-description
-  font-size 3.494em
-
-.hackers-arrows
-  color #2196ba
+section
+  height: 90vh
+  width: 100vw
 
 .hero
-  height 100%
+  position relative
+  width 100%
+
+@media only screen and (max-width: 600px) // Movil
+  .hackers-heading
+    font-family 'Nevis', fantasy
+    font-size 3em
+  .hackers-description
+    font-size 1.5em
+  .respLine
+    display block
+  .navItem
+    font-size 1.1em
+  .hero
+    top 20%
+  .pa1
+    width 14em
+  .pa2
+    width 5.4em
+
+@media only screen and (min-width: 600px) and (max-width: 1264px) // Medio
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 4.5em
+  .hackers-description
+    font-size: 2.5em
+  .navItem
+    font-size: 1em
+  .patrotitle
+    font-size: 1.5em
+  .hero
+    top 0%
+  .pa1
+    width 12em
+  .pa2
+    width 8em
+
+@media only screen and (min-width: 1264px) // Escritorio
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 7em
+  .hackers-description
+    font-size: 3.5em
+  .navItem
+    font-size: 1.2em
+  .patrotitle
+    font-size: 3em
+  .hero
+    top 25%
+  .pa1
+    width 25em
+  .pa2
+    width 15em
+
+.hackers-arrows
+  color: #2196ba
 
 .heading-text
-  background #00000099
+  background: #00000099
+  width: 100vw

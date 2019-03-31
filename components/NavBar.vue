@@ -1,13 +1,21 @@
 <template>
-  <v-toolbar color="transparent" flat dense class="navbar">
+  <v-toolbar
+    app
+    color="transparent"
+    flat
+    fixed
+    dense
+    class="navbar"
+  >
+    <v-spacer />
     <v-toolbar-items>
       <v-btn class="navItem" flat href="/">
-        Pagina Principal
+        Inicio
       </v-btn>
-      <v-btn class="navItem" flat dense href="conferencias">
+      <v-btn class="navItem" flat href="conferencias">
         Conferencias
       </v-btn>
-      <v-btn class="navItem" flat dense href="talleres">
+      <v-btn class="navItem" flat href="talleres">
         Talleres
       </v-btn>
     </v-toolbar-items>
@@ -17,9 +25,8 @@
 <style>
 .navbar {
   position: sticky;
-  height: 3vh;
+  height: 5vh;
   z-index: 10;
-  background: red;
 }
 </style>
 

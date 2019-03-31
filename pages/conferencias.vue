@@ -26,7 +26,9 @@
             </h1>
           </v-card-title>
           <v-card-text>
-            <p>Este a&ntilde;o contamos con <b>X</b> conferencias.  Las conferencias tendrán lugar en <b>Lugar</b>, aquí tienes un <a>horario</a> m&aacute;s detallado</p>
+            <p>Este a&ntilde;o contamos con <b>X</b> conferencias!</p>
+            <p>Desde Machine Learning hasta hacking y róbotica médica, te hemos preparado las mejores conferencias relacionadas con el mundo de la informática.</p>
+            <p>Las conferencias tendrán lugar en <b>Lugar</b>, aquí tienes un <a href="/images/horario.png">horario</a> m&aacute;s detallado</p>
           </v-card-text>
           <ponentes
             :datos="conferencias"
@@ -90,15 +92,14 @@ export default {
         url: 'url4'
       },
       {
-        ponente: 'Irene Rivas Blanco',
+        ponente: 'Víctor F. Muñoz Martínez',
         titulo: 'Dispositivos intraabdominales para robótica quirúrgica',
         tituloCorto: 'Dispositivos intraabdominales para robótica quirúrgica',
         desc:
           'Hoy en día el uso de robots dentro de los quirófanos es una realidad cotidiana en numerosos hospitales del mundo.  En esta charla se dará una visión general de los robots más utilizados en el ámbito qurúrgico, y se profundizará en los dispositivos intraabdominales, también conocidos como mini-robots, que dan solución a los problemas planteados por las técnicas quirúrgicas menos invasivas.',
         tech: [],
         time: 'Martes 9, 11:30',
-        foto:
-          'https://pbs.twimg.com/profile_images/589125299130003456/fuODjrn6_400x400.png',
+        foto: 'https://www.uma.es/media/tinyimages/img/image_4828.jpeg',
         bg: '#fff',
         sc: '#0099ff',
         url: 'url4'

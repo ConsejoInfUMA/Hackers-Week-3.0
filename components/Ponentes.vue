@@ -14,13 +14,14 @@
         v-for="conf in datos"
         :key="conf.ponente"
         xs10
-        sm10
+        sm6
         md6
         lg4
         xl3
       >
         <v-card :color="conf.bg" tile class="pb-3 ponente">
           <v-img
+            contain
             height="20em"
             :src="conf.foto"
           />

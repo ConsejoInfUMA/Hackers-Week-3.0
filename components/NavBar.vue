@@ -1,10 +1,10 @@
 <template>
   <v-toolbar
     app
-    color="transparent"
-    flat
+    color="#062933"
     fixed
     dense
+    height="40em"
     class="navbar"
   >
     <v-spacer />
@@ -24,8 +24,6 @@
 
 <style>
 .navbar {
-  position: sticky;
-  height: 5vh;
   z-index: 10;
 }
 </style>

@@ -1,15 +1,15 @@
 <template>
   <v-layout align-end justify-center row>
     <v-btn
-      :color="conf.sc"
+      :color="color"
       @click="dialog = true"
     >
       Info
     </v-btn>
     <v-btn
       target="_blank"
-      :href=" conf.url"
-      :color="conf.sc"
+      :href="url"
+      :color="color"
     >
       Registro
     </v-btn>
@@ -21,13 +21,13 @@
       <v-card>
         <v-card-title
           class="text-xs-center justify-center"
-          :style="'color: ' + conf.bg + '; background:' + conf.sc + ';'"
+          :style="'color: ' + color + ';'"
         >
-          <h1 
+          <h1
             class="headline"
           >
-            {{ conf.ponente }} presenta:<br><br>
-            {{ conf.titulo }}
+            {{ speaker }} presenta:<br><br>
+            {{ title }}
           </h1>
         </v-card-title>
 
@@ -36,25 +36,23 @@
             Descripción
           </h4>
           <p class="subheading">
-            {{ conf.desc }}
+            {{ description }}
           </p>
         </v-card-text>
         <v-card-text>
-          <h4 v-if="conf.tech.length != 0" class="headline">
+          <h4 v-if="technologies" class="headline">
             Tecnologías usadas
           </h4>
-          <ul v-for="(item, index) in conf.tech" :key="index">
-            <li class="subheading">
-              {{ item }}
-            </li>
-          </ul>
+          <p class="subheading">
+            {{ item }}
+          </p>
         </v-card-text>
         <v-divider />
         <v-card-actions>
           <v-spacer />
           <v-btn
             style="color: #fff"
-            :color="conf.sc"
+            :color="color"
             @click="dialog = false"
           >
             Cerrar
@@ -68,11 +66,50 @@
 <script>
 export default {
   props: {
-    conf: {
+    color: {
+      type: String,
+      default: '#ffffff',
+      required: false
+    },
+    description: {
+      type: String,
+      default: '',
+      required: false
+    },
+    notes: {
+      type: String,
+      default: '',
+      required: false
+    },
+    speaker: {
+      type: String,
+      default: '',
+      required: false
+    },
+    software: {
+      type: String,
+      default: '',
+      required: false
+    },
+    startDate: {
       type: Object,
-      default: () => {
-        return 0
-      }
+      default: null,
+      required: true
+    },
+    technologies: {
+      type: String,
+      default: '',
+      required: true
+    },
+    title: {
+      type: String,
+      default: '',
+      required: true
+    },
+    url: {
+      type: String,
+      default: '#',
+      required: true
     }
   },
   data() {

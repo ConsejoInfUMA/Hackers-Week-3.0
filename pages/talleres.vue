@@ -22,7 +22,7 @@
               Talleres
             </h1>
             <h1 class="display-2 hidden-md-and-up">
-              Talleres
+              Talleress
             </h1>
           </v-card-title>
           <v-card-text>
@@ -31,6 +31,13 @@
           <ponentes
             :datos="conferencias"
           />
+          <ul v-for="workshop in workshops" :key="workshop.speaker">
+            <li>
+              <v-icon>mdi-calendar-today</v-icon> {{ workshop.start_date.toDate().toLocaleDateString() }}
+              <br>
+              <v-icon>mdi-alarm</v-icon> {{ workshop.start_date.toDate().getHours() }} : {{ ( "0" + workshop.start_date.toDate().getMinutes() ).slice(-2) }}
+            </li>
+          </ul>
         </v-card>
       </v-flex>
     </v-layout>
@@ -39,6 +46,7 @@
 
 <script>
 import Ponentes from '~/components/Ponentes.vue'
+import { db } from '~/plugins/firestore.js'
 
 export default {
   components: {
@@ -46,6 +54,8 @@ export default {
   },
   data: () => ({
     // TODO: Estructura e info
+    workshops: [],
+
     conferencias: [
       {
         ponente: 'Rippley',
@@ -58,6 +68,7 @@ export default {
           'https://cdn3.volusion.com/ondfq.dtexo/v/vspfiles/photos/MAR188729-2.jpg?1525905422',
         bg: '#fff',
         sc: '#0af',
+        sa: 'sad',
         url: 'https://google.com'
       },
       {
@@ -74,6 +85,10 @@ export default {
         url: 'url2'
       }
     ]
-  })
+  }),
+
+  firestore: {
+    workshops: db.collection('workshops')
+  }
 }
 </script>

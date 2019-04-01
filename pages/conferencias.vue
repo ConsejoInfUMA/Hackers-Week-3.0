@@ -39,6 +39,7 @@
 
 <script>
 import Ponentes from '~/components/Ponentes.vue'
+import { db } from '~/plugins/firestore.js'
 
 export default {
   components: {
@@ -160,6 +161,11 @@ export default {
         url: 'url4'
       }
     ]
-  })
+  }),
+  firestore() {
+    return {
+      locations: db.collection('conferences').orderBy('createdAt')
+    }
+  }
 }
 </script>

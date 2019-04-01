@@ -41,6 +41,7 @@
 
 <script>
 import Ponentes from '~/components/Ponentes.vue'
+import { db } from '~/plugins/firestore.js'
 
 export default {
   components: {
@@ -93,7 +94,8 @@ export default {
       },
       {
         ponente: 'Víctor F. Muñoz Martínez',
-        titulo: 'Dispositivos intraabdominales para robótica quirúrgica: Una pareja de hecho',
+        titulo:
+          'Dispositivos intraabdominales para robótica quirúrgica: Una pareja de hecho',
         tituloCorto: 'Dispositivos intraabdominales para robótica quirúrgica',
         desc:
           'Hoy en día el uso de robots dentro de los quirófanos es una realidad cotidiana en numerosos hospitales del mundo. En esta charla se dará un repaso por la historia de los sistemas robóticos aplicados a medicina, y se mostrarán las investigaciones realizadas en este campo en el grupo de robótica médica de la UMA.',
@@ -161,6 +163,11 @@ export default {
         url: 'url4'
       }
     ]
-  })
+  }),
+  firestore() {
+    return {
+      locations: db.collection('conferences').orderBy('createdAt')
+    }
+  }
 }
 </script>

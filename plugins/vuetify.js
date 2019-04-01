@@ -1,3 +1,5 @@
+import '@mdi/font/css/materialdesignicons.css'
+
 import Vue from 'vue'
 import Vuetify, {
   VApp,
@@ -15,6 +17,7 @@ Vue.use(Vuetify, {
     VLayout,
     VFlex
   },
+  iconfont: 'mdi',
   theme: {
     primary: '#2196BA',
     accent: '#FFFFFF',

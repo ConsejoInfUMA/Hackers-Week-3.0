@@ -11,28 +11,27 @@
       wrap
     >
       <v-flex
-        v-for="conf in datos"
-        :key="conf.ponente"
+        v-for="speak in speaks"
+        :key="speak.title"
         xs10
-        sm6
+        sm10
         md6
         lg4
         xl3
       >
-        <v-card :color="conf.bg" tile class="pb-3 ponente">
+        <v-card :color="color" tile class="pb-3 ponente">
           <v-img
-            contain
-            height="20em"
-            :src="conf.foto"
+            height="19em"
+            :src="speak.photo"
           />
           <v-card-title class="justify-center">
             <h1 :style="'height: 3em; overflow: hidden; color: ' + conf.sc" class="title text-xs-center">
-              {{ conf.tituloCorto }}
+              {{ speak.title }}
             </h1>
           </v-card-title>
           <v-card-actions>
             <ModalPonente
-              :conf="conf"
+              v-bind="speak"
             />
           </v-card-actions>
         </v-card>
@@ -49,30 +48,13 @@ export default {
     ModalPonente
   },
   props: {
-    datos: {
-      type: Object,
-      default: () => {
-        return 0
-      }
+    speaks: {
+      type: Array,
+      default: () => []
     }
   },
   data: () => ({
     return: { dialog: false }
   })
 }
-
-/* Plantilla
-{
-  ponente: '',
-  titulo: '',
-  desc: '',
-  tech: [],
-  time: '',
-  foto:
-    '',
-  bg: '#',
-  sc: '#',
-  url: ''
-}
-*/
 </script>

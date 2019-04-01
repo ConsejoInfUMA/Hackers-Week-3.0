@@ -21,7 +21,7 @@
   top: 0;
   left: 0;
   z-index: -10;
-  background: radial-gradient(#062933, #010c0f); /*#062933*/
+  background: radial-gradient(#062933, #010c0f);
 }
 </style>
 

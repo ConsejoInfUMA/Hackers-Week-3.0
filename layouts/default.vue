@@ -2,8 +2,8 @@
   <div>
     <particles />
     <v-app dark>
+      <NavBar />
       <v-content>
-        <NavBar />
         <v-container fill-height fluid pa-0>
           <nuxt />
         </v-container>
@@ -27,6 +27,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      // Esto hace falta?
       items: [
         {
           icon: 'apps',

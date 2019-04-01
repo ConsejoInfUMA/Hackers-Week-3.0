@@ -93,7 +93,7 @@ export default {
       },
       {
         ponente: 'Víctor F. Muñoz Martínez',
-        titulo: 'Dispositivos intraabdominales para robótica quirúrgica',
+        titulo: 'Dispositivos intraabdominales para robótica quirúrgica: Una pareja de hecho',
         tituloCorto: 'Dispositivos intraabdominales para robótica quirúrgica',
         desc:
           'Hoy en día el uso de robots dentro de los quirófanos es una realidad cotidiana en numerosos hospitales del mundo.  En esta charla se dará una visión general de los robots más utilizados en el ámbito qurúrgico, y se profundizará en los dispositivos intraabdominales, también conocidos como mini-robots, que dan solución a los problemas planteados por las técnicas quirúrgicas menos invasivas.',

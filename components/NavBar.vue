@@ -1,13 +1,12 @@
 <template>
   <v-toolbar
     app
-    color="#062933"
+    color="transparent"
     fixed
     dense
     height="40em"
     class="navbar"
   >
-    <v-spacer />
     <v-toolbar-items>
       <v-btn class="navItem" flat href="/">
         Inicio

@@ -29,7 +29,7 @@
             <p>Este a&ntilde;o contamos con <b>X</b> conferencias.  Las conferencias tendrán lugar en <b>Lugar</b>, aquí tienes un <a>horario</a> m&aacute;s detallado</p>
           </v-card-text>
           <ponentes
-            :datos="conferencias"
+            :speaks="workshops"
           />
           <ul v-for="workshop in workshops" :key="workshop.speaker">
             <li>

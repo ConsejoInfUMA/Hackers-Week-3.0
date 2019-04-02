@@ -35,16 +35,20 @@
           <h4 class="headline">
             Descripción
           </h4>
-          <p class="subheading">
-            {{ description }}
-          </p>
+          <div style="white-space: pre-line;">
+            <p class="subheading">
+              <template v-for="line in description.split('#')">
+                {{ line }} <br :key="line">
+              </template>
+            </p>
+          </div>
         </v-card-text>
         <v-card-text>
           <h4 v-if="technologies" class="headline">
             Tecnologías usadas
           </h4>
           <p class="subheading">
-            {{ item }}
+            {{ technologies }}
           </p>
         </v-card-text>
         <v-divider />
@@ -94,22 +98,22 @@ export default {
     startDate: {
       type: Object,
       default: null,
-      required: true
+      required: false
     },
     technologies: {
       type: String,
       default: '',
-      required: true
+      required: false
     },
     title: {
       type: String,
       default: '',
-      required: true
+      required: false
     },
     url: {
       type: String,
       default: '#',
-      required: true
+      required: false
     }
   },
   data() {

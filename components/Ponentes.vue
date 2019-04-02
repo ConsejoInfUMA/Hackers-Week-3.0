@@ -19,13 +19,13 @@
         lg4
         xl3
       >
-        <v-card :color="color" tile class="pb-3 ponente">
+        <v-card :color="speak.color" tile class="pb-3 ponente">
           <v-img
             height="19em"
             :src="speak.photo"
           />
           <v-card-title class="justify-center">
-            <h1 :style="'height: 3em; overflow: hidden; color: ' + conf.sc" class="title text-xs-center">
+            <h1 :style="'height: 3em; overflow: hidden; color: ' + speak.color" class="title text-xs-center">
               {{ speak.title }}
             </h1>
           </v-card-title>

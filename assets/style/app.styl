@@ -17,12 +17,27 @@ html, body
 .respLine
   display inline
 
+.hero
+  position relative
+  height 100vh
+
+.hackers-heading
+  font-family: 'Nevis', fantasy
+
+.patros
+  position relative
+
+.horario
+  display block
+  margin auto
+
 .navbar
   background #062933 !important
 
 @media only screen and (max-width: 600px) // Movil
+  .hero
+    height 100vh
   .hackers-heading
-    font-family 'Nevis', fantasy
     font-size 3em
   .hackers-description
     font-size 1.5em
@@ -31,26 +46,34 @@ html, body
   .navItem
     font-size 1.1em
   .pa1
+    top 2em
     width 14em
   .pa2
-    width 5.4em
+    top 4em
+    width 4em
+  .horario
+    width 100%
 
 @media only screen and (min-width: 600px) and (max-width: 1264px) // Medio
   .hackers-heading
-    font-family: 'Nevis', fantasy
     font-size: 4.5em
   .hackers-description
-    font-size: 2.5em
+    font-size: 2em
   .navItem
     font-size: 1em
   .pa1
-    width 15em
-  .pa2
+    top 1em
     width 10em
+  .pa2
+    top 1em
+    width 8em
+  .horario
+    width 100%
 
 @media only screen and (min-width: 1264px) // Escritorio
+  .hero
+    top 0
   .hackers-heading
-    font-family: 'Nevis', fantasy
     font-size: 7em
   .hackers-description
     font-size: 3.5em
@@ -58,8 +81,12 @@ html, body
     font-size: 1em
   .pa1
     width 25em
+    top 3em
   .pa2
     width 15em
+    top 8em
+  .horario
+    width 65%
 
 .hackers-arrows
   color: #2196ba

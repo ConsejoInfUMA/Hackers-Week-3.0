@@ -12,7 +12,7 @@
     >
       <v-flex>
         <h1
-          class="headline"
+          class="display-2"
         >
           Esta p&aacute;gina es como las matr&iacute;culas en c&aacute;lculo...<br>Inexistente
         </h1>
@@ -20,17 +20,11 @@
           to="/"
         >
           <h4
-            class="subheading"
+            class="display-1"
           >
             Volver a la base rebelde
           </h4>
         </nuxt-link>
-        <br>
-        <h1
-          class="title"
-        >
-          404
-        </h1>
       </v-flex>
     </v-layout>
   </v-container>

@@ -1,4 +1,5 @@
 // Import Vuetify styling
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Archivo')
 @require '~vuetify/src/stylus/app.styl'
 
 @font-face
@@ -6,22 +7,63 @@
   src url('~assets/fonts/nevis.ttf')
   font-weight bold
 
-.hackers-heading
-  font-family 'Nevis', fantasy
-  font-size 6.989em
+html, body
+  font-family: 'Monserrat', sans-serif !important
+  font-size: 12pt
 
-.hackers-mobile-heading
-  font-family 'Nevis', fantasy
-  font-size 5em
+.display-3
+  font-family: 'Archivo', sans-serif !important
 
-.hackers-description
-  font-size 3.494em
+.respLine
+  display inline
+
+.navbar
+  background #062933 !important
+
+@media only screen and (max-width: 600px) // Movil
+  .hackers-heading
+    font-family 'Nevis', fantasy
+    font-size 3em
+  .hackers-description
+    font-size 1.5em
+  .respLine
+    display block
+  .navItem
+    font-size 1.1em
+  .pa1
+    width 14em
+  .pa2
+    width 5.4em
+
+@media only screen and (min-width: 600px) and (max-width: 1264px) // Medio
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 4.5em
+  .hackers-description
+    font-size: 2.5em
+  .navItem
+    font-size: 1em
+  .pa1
+    width 15em
+  .pa2
+    width 10em
+
+@media only screen and (min-width: 1264px) // Escritorio
+  .hackers-heading
+    font-family: 'Nevis', fantasy
+    font-size: 7em
+  .hackers-description
+    font-size: 3.5em
+  .navItem
+    font-size: 1em
+  .pa1
+    width 25em
+  .pa2
+    width 15em
 
 .hackers-arrows
-  color #2196ba
-
-.hero
-  height 100%
+  color: #2196ba
 
 .heading-text
-  background #00000099
+  background: #00000099
+  width: 100vw

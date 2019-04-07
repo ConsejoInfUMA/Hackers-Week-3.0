@@ -1,32 +1,22 @@
 <template>
-  <v-container fluid fill-height pa-0>
-    <v-layout class="hero" align-center row wrap>
-      <v-flex>
-        <section>
-          <div class="heading-text text-xs-center">
-            <hackers-heading />
-            <v-spacer />
-            <h3 class="hackers-description">
-              A week to learn about <typed class="hackers-arrows" />
-            </h3>
-          </div>
-        </section>
-      </v-flex>
-      <particles />
-    </v-layout>
-  </v-container>
+  <v-layout align-center justify-center fill-height column hero>
+    <hackers-heading />
+    <patrocinios />
+    <particles class="particles" />
+  </v-layout>
 </template>
 
 <script>
-import Particles from '~/components/Particles.vue'
-import Typed from '~/components/Typed.vue'
 import HackersHeading from '~/components/HackersHeading.vue'
+import Patrocinios from '~/components/Patrocinios.vue'
+import Particles from '~/components/Particles.vue'
 
 export default {
+  layout: 'inicio',
   components: {
+    HackersHeading,
     Particles,
-    Typed,
-    HackersHeading
+    Patrocinios
   }
 }
 </script>

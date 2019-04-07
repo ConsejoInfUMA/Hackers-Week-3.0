@@ -4,13 +4,13 @@
 
 <style>
 #particles {
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -10;
-  background: radial-gradient(#062933, #010c0f); /*#062933*/
   top: 0;
   bottom: 0;
+  z-index: -10;
+  background: radial-gradient(#062933, #010c0f);
 }
 
 #particles canvas {

@@ -1,35 +1,27 @@
 <template>
-  <v-app dark>
-    <v-content>
-      <nuxt />
-    </v-content>
-  </v-app>
+  <div>
+    <v-app dark class="app">
+      <NavBar />
+      <v-content>
+        <v-container fill-height fluid>
+          <nuxt />
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
 </template>
 
+<style>
+.app {
+  background: #00000000 !important;
+}
+</style>
 <script>
+import NavBar from '~/components/NavBar.vue'
+
 export default {
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
+  components: {
+    NavBar
   }
 }
 </script>

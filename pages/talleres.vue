@@ -5,86 +5,41 @@
       justify-center
       align-center
       fill-height
-      xs12
-      sm10
-      md10
     >
       <v-flex
         color="primary"
         fill-height
         xs12
         sm8
-        md8
       >
-        <v-card>
-          <v-card-title>
-            <h1 class="display-3 hidden-sm-and-down">
-              Talleres
-            </h1>
-            <h1 class="display-2 hidden-md-and-up">
-              Talleress
-            </h1>
-          </v-card-title>
-          <v-card-text>
-            <p>Este a&ntilde;o contamos con <b>X</b> conferencias.  Las conferencias tendrán lugar en <b>Lugar</b>, aquí tienes un <a>horario</a> m&aacute;s detallado</p>
-          </v-card-text>
-          <ponentes
-            :speaks="workshops"
-          />
-          <ul v-for="workshop in workshops" :key="workshop.speaker">
-            <li>
-              <v-icon>mdi-calendar-today</v-icon> {{ workshop.start_date.toDate().toLocaleDateString() }}
-              <br>
-              <v-icon>mdi-alarm</v-icon> {{ workshop.start_date.toDate().getHours() }} : {{ ( "0" + workshop.start_date.toDate().getMinutes() ).slice(-2) }}
-            </li>
-          </ul>
-        </v-card>
+        <h1 class="display-3">
+          Talleres
+        </h1>
+        <h2 class="display-2 text-xs-center">
+          ¡Pon lo que aprendas en práctica!
+        </h2>
+        <ponentes
+          :speaks="workshops"
+        />
       </v-flex>
+      <particles />
     </v-layout>
   </v-container>
 </template>
 
 <script>
+import Particles from '~/components/Particles.vue'
 import Ponentes from '~/components/Ponentes.vue'
 import { db } from '~/plugins/firestore.js'
 
 export default {
   components: {
+    Particles,
     Ponentes
   },
   data: () => ({
     // TODO: Estructura e info
-    workshops: [],
-
-    conferencias: [
-      {
-        ponente: 'Rippley',
-        titulo: 'Killing Aliens',
-        tituloCorto: 'Killing Aliens',
-        desc: 'Matar Xenomorfos 101',
-        tech: ['Armas', 'Suerte'],
-        time: 'Fecha y hora',
-        foto:
-          'https://cdn3.volusion.com/ondfq.dtexo/v/vspfiles/photos/MAR188729-2.jpg?1525905422',
-        bg: '#fff',
-        sc: '#0af',
-        sa: 'sad',
-        url: 'https://google.com'
-      },
-      {
-        ponente: 'C#',
-        titulo: 'Titulo muy largo de C#',
-        tituloCorto: 'Titulo',
-        desc: 'Descripcion sobre C#',
-        tech: [],
-        time: 'Fecha y hora',
-        foto:
-          'https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png',
-        bg: '#fff',
-        sc: '#9039a7',
-        url: 'url2'
-      }
-    ]
+    workshops: []
   }),
 
   firestore: {

@@ -2,7 +2,6 @@
   <v-container
     grid-list-md
     fluid
-    fill-height
   >
     <v-layout
       align-center
@@ -25,7 +24,7 @@
             :src="speak.photo"
           />
           <v-card-title class="justify-center">
-            <h1 :style="'height: 3em; overflow: hidden; color: ' + speak.color" class="title text-xs-center">
+            <h1 :style="'height: 3em; overflow: hidden;'" class="title text-xs-center">
               {{ speak.title }}
             </h1>
           </v-card-title>

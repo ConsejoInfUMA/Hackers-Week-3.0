@@ -1,10 +1,9 @@
 <template>
   <div>
-    <particles />
-    <v-app dark>
+    <v-app dark class="app">
       <NavBar />
       <v-content>
-        <v-container fill-height fluid pa-0>
+        <v-container fill-height fluid>
           <nuxt />
         </v-container>
       </v-content>
@@ -12,39 +11,17 @@
   </div>
 </template>
 
+<style>
+.app {
+  background: #00000000 !important;
+}
+</style>
 <script>
-import Particles from '~/components/Particles.vue'
 import NavBar from '~/components/NavBar.vue'
 
 export default {
   components: {
-    Particles,
     NavBar
-  },
-
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      // Esto hace falta?
-      items: [
-        {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
   }
 }
 </script>

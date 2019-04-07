@@ -1,20 +1,24 @@
 // Import Vuetify styling
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Archivo')
 @require '~vuetify/src/stylus/app.styl'
 
 @font-face
-  font-family: Nevis
-  src: url('../fonts/nevis.ttf')
+  font-family Nevis
+  src url('~assets/fonts/nevis.ttf')
+  font-weight bold
 
-section
-  height: 100%
-  width: 100vw
+html, body
+  font-family: 'Monserrat', sans-serif !important
+  font-size: 12pt
 
-.hero
-  position relative
-  width 100%
+.display-3
+  font-family: 'Archivo', sans-serif !important
+
+.respLine
+  display inline
 
 .navbar
-  background linear-gradient(0.25turn,#062933aa, #00000000)
+  background #062933 !important
 
 @media only screen and (max-width: 600px) // Movil
   .hackers-heading
@@ -26,8 +30,6 @@ section
     display block
   .navItem
     font-size 1.1em
-  .hero
-    top 15%
   .pa1
     width 14em
   .pa2
@@ -41,12 +43,10 @@ section
     font-size: 2.5em
   .navItem
     font-size: 1em
-  .hero
-    top 10%
   .pa1
-    width 12em
+    width 15em
   .pa2
-    width 8em
+    width 10em
 
 @media only screen and (min-width: 1264px) // Escritorio
   .hackers-heading
@@ -56,8 +56,6 @@ section
     font-size: 3.5em
   .navItem
     font-size: 1em
-  .hero
-    top 30%
   .pa1
     width 25em
   .pa2

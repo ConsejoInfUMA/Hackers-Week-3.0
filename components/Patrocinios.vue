@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="patros">
     <div class="hidden-xs-only">
       <v-layout align-center justify-center>
         <v-flex
@@ -16,7 +16,7 @@
           </v-card>
         </v-flex>
       </v-layout>
-      <v-layout align-center justify-center pt-3>
+      <v-layout align-center justify-center>
         <v-flex
           v-for="imp in plata"
           :key="imp.name"
@@ -49,7 +49,7 @@
         </v-flex>
       </v-layout>
       <br>
-      <v-layout align-center justify-center pt-5>
+      <v-layout align-center justify-center>
         <v-flex
           v-for="imp in plata"
           :key="imp.name"

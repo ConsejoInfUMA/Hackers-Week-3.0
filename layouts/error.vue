@@ -1,31 +1,44 @@
 <template>
-  <v-container
-    bg
-    fill-height
-    grid-list-md
-    text-xs-center
-  >
-    <v-layout
-      row 
-      wrap
-      align-center
+  <div>
+    <v-container
+      bg
+      fill-height
+      grid-list-md
+      text-xs-center
     >
-      <v-flex>
-        <h1
-          class="display-2"
-        >
-          Esta p&aacute;gina es como las matr&iacute;culas en c&aacute;lculo...<br>Inexistente
-        </h1>
-        <nuxt-link 
-          to="/"
-        >
-          <h4
-            class="display-1"
+      <v-layout
+        row
+        wrap
+        align-center
+      >
+        <v-flex>
+          <h1
+            class="display-2"
           >
-            Volver a la base rebelde
-          </h4>
-        </nuxt-link>
-      </v-flex>
-    </v-layout>
-  </v-container>
+            Esta p&aacute;gina es como las matr&iacute;culas en c&aacute;lculo...<br>Inexistente
+          </h1>
+          <nuxt-link
+            to="/"
+          >
+            <h4
+              class="display-1"
+            >
+              Volver a la base rebelde
+            </h4>
+          </nuxt-link>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    <particles />
+  </div>
 </template>
+
+<script>
+import Particles from '~/components/Particles.vue'
+
+export default {
+  components: {
+    Particles
+  }
+}
+</script>

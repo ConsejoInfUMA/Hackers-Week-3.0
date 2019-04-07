@@ -43,13 +43,21 @@
             </p>
           </div>
         </v-card-text>
-        <v-card-text>
-          <h4 v-if="technologies" class="headline">
+        <v-card-text v-if="technologies">
+          <h4 class="headline">
             Tecnologías usadas
           </h4>
           <p class="subheading">
             {{ technologies }}
           </p>
+        </v-card-text>
+        <v-card-text>
+          <h4 class="headline">
+            Fecha y hora
+          </h4>
+          <v-icon>mdi-calendar-today</v-icon> {{ start_date.toDate().toLocaleDateString() }}
+          <br>
+          <v-icon>mdi-alarm</v-icon> {{ start_date.toDate().getHours() }} : {{ ( "0" + start_date.toDate().getMinutes() ).slice(-2) }}
         </v-card-text>
         <v-divider />
         <v-card-actions>
@@ -95,7 +103,7 @@ export default {
       default: '',
       required: false
     },
-    startDate: {
+    start_date: {
       type: Object,
       default: null,
       required: false

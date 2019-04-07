@@ -4,7 +4,9 @@
       <hackers-heading />
       <patrocinios />
     </v-layout>
-    <img class="horario" src="~/static/images/horario.png">
+    <a target="_blank" href="/images/horario.png">
+      <img class="horario" src="~/static/images/horario.png">
+    </a>
   </v-layout>
 </template>
 

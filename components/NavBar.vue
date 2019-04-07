@@ -11,10 +11,10 @@
       <v-btn class="navItem" flat href="/">
         Inicio
       </v-btn>
-      <v-btn class="navItem" flat href="conferencias">
+      <v-btn class="navItem" flat href="/conferencias">
         Conferencias
       </v-btn>
-      <v-btn class="navItem" flat href="talleres">
+      <v-btn class="navItem" flat href="/talleres">
         Talleres
       </v-btn>
     </v-toolbar-items>

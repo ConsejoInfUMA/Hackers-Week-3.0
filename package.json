@@ -1,6 +1,8 @@
 {
-  "name": "hackersweek",
-  "version": "0.1.0",
+  "name": "pagina-hackers",
+  "version": "1.0.0",
+  "description": "Pagina web de la Hackers &lt;&gt; Week",
+  "author": "Consejo ETSI Informática UMA",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,6 +16,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.2.0",
     "vue": "^2.6.10",
+    "vue-meta": "^2.2.2",
     "vuefire": "^2.1.2"
   },
   "devDependencies": {

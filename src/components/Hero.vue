@@ -31,7 +31,7 @@
 <style scoped>
     @font-face {
         font-family: nevis;
-        src: url(../../public/nevis.ttf)
+        src: url(../assets/nevis.ttf)
     }
 
     h1, h2 {

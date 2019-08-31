@@ -1,0 +1,24 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+// $primary: #8c67ef;
+$primary: #2196ba;
+$dark: #020e12;
+// Oficial: 062933
+// 10%: 03151a
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+        "dark": ($dark, $dark-invert),
+        "primary": ($primary, $primary-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

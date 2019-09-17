@@ -29,6 +29,8 @@
 </template>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
     @font-face {
         font-family: nevis;
         src: url(../../public/nevis.ttf)
@@ -39,6 +41,10 @@
         z-index: 1 !important;
         color: #f5f5f5 !important;
         font-family: nevis, cursive;
+    }
+
+    h2 {
+        font-family: 'Fira Sans', sans-serif;
     }
 
     .particles {

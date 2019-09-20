@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <Hero/>
+        <NavBarRRSS />
+        <Hero />
     </div>
 </template>
 
@@ -11,11 +12,13 @@
 </style>
 
 <script>
+    import NavBarRRSS from "@/components/NavBarRRSS";
     import Hero from '@/components/Hero.vue';
 
     export default {
         name: 'App',
         components: {
+            NavBarRRSS,
             Hero
         }
     }

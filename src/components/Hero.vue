@@ -1,9 +1,11 @@
 <template>
     <section class="hero is-fullheight is-dark is-bold" id="hero">
         <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title is-size-4-mobile">HACKERS <span class="angles">&lt;&gt;</span> WEEK 7</h1>
-                <Countdown event_date="03/30/2020"/> <!-- M/D/Y -->
+            <div class="container">
+                <div class="text has-text-centered">
+                    <h1 class="title is-size-4-mobile">HACKERS <span class="angles">&lt;&gt;</span> WEEK 7</h1>
+                    <Countdown event_date="03/30/2020"/> <!-- M/D/Y -->
+                </div>
             </div>
         </div>
         <vue-particles class="particles"
@@ -11,15 +13,14 @@
                        :hoverEffect="false"
                        :lineLinked="true"
                        :lineOpacity="0.5"
-                       :linesDistance="150"
+                       :linesDistance="120"
                        :linesWidth="1"
-                       :moveSpeed="1"
-                       :particleOpacity="1"
-                       :particleSize="1.5"
+                       :moveSpeed="0.5"
+                       :particleOpacity="0.5"
+                       :particleSize="2"
                        :particlesNumber="80"
                        color="#2196ba"
                        linesColor="#2196ba"
-                       shapeType="polygon"
                        hover-effect="grab"
                        hover-mode="true"
                        style="position: absolute; width: 100%; height: 100%;"
@@ -36,10 +37,16 @@
         src: url(../../public/nevis.ttf)
     }
 
-    h1, h2 {
+    .text, .buttons {
         position: relative;
         z-index: 1 !important;
+    }
+
+    h1, h2 {
         color: #f5f5f5 !important;
+    }
+
+    h1 {
         font-family: nevis, cursive;
     }
 
@@ -70,7 +77,7 @@
             font-size: 6em;
         }
         h2 {
-            font-size: 4em;
+            font-size: 3em;
         }
     }
 </style>

@@ -2,7 +2,10 @@
     <b-navbar fixed-top="" id="navbar">
         <template slot="start">
             <b-navbar-item href="http://u.uma.es/kz/" target="_blank">
-                <b-button icon-left="star">Da una charla o conferencia</b-button>
+                <b-button icon-left="star">Da una conferencia o taller</b-button>
+            </b-navbar-item>
+            <b-navbar-item href="http://u.uma.es/kz/" target="_blank">
+                <b-button icon-left="heart">Se un voluntario</b-button>
             </b-navbar-item>
             <b-navbar-item href="https://www.twitter.com/hackersweek" target="_blank">
                 <b-button icon-left="twitter">Twitter</b-button>

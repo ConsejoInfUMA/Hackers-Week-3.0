@@ -1,4 +1,5 @@
 # hackersweek
+[![Netlify Status](https://api.netlify.com/api/v1/badges/193d3fa2-e8c8-4df4-bbb9-b34555d3b4dd/deploy-status)](https://app.netlify.com/sites/hackersweek/deploys)
 
 ## Project setup
 ```

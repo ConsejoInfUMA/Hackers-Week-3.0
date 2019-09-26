@@ -4,9 +4,11 @@
 // Set your colors
 // $primary: #8c67ef;
 $primary: #2196ba;
-$dark: #020e12;
+$primary-invert: findColorInvert($primary);
+$dark: #03151a;
 // Oficial: 062933
 // 10%: 03151a
+//020e12
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -17,7 +19,7 @@ $colors: (
 // Links
 $link: $primary;
 $link-invert: $primary-invert;
-$link-focus-border: $primary;
+$link-focus-border: $primary ;
 
 // Import Bulma and Buefy styles
 @import "~bulma";

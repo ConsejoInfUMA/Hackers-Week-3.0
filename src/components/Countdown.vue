@@ -1,6 +1,8 @@
 <template>
-    <h2 class="subtitle is-size-5-mobile">
-        {{ message }}
+    <h2 class="subtitle is-size-4-mobile">
+        30 de Marzo de 2020
+        <br>
+        <span>{{ message }}</span>
     </h2>
 </template>
 
@@ -46,9 +48,7 @@
                 let d = new Date(this.event_date);
                 let n = Date.now();
                 let df = d - n;
-                let dv = (df) / (1000);
-                let t = Math.ceil(dv);
-                return t;
+                return Math.ceil((df) / (1000));
             }
         }
     };

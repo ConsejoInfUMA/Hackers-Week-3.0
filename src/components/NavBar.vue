@@ -13,15 +13,6 @@
             <b-navbar-item href="http://u.uma.es/kz/" target="_blank">
                 <b-button icon-left="star">Da una charla o conferencia</b-button>
             </b-navbar-item>
-            <b-navbar-item href="https://www.twitter.com/hackersweek" target="_blank">
-                <b-button icon-left="twitter">Twitter</b-button>
-            </b-navbar-item>
-            <b-navbar-item href="https://www.instagram.com/hackersweek" target="_blank">
-                <b-button icon-left="instagram">Instagram</b-button>
-            </b-navbar-item>
-            <b-navbar-item href="https://www.facebook.com/hackersweek" target="_blank">
-                <b-button icon-left="facebook">Facebook</b-button>
-            </b-navbar-item>
         </template>
     </b-navbar>
 </template>

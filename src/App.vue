@@ -29,6 +29,7 @@
         >
             <Eventos coleccion="rol"/>
         </Seccion>
+        <Footer/>
     </div>
 </template>
 
@@ -67,6 +68,7 @@
     import Hero from '@/components/Hero.vue';
     import Seccion from "@/components/Seccion";
     import Eventos from "@/components/Eventos";
+    import Footer from '@/components/Footer';
 
     export default {
         name: 'App',
@@ -74,7 +76,8 @@
             NavBar,
             Hero,
             Seccion,
-            Eventos
+            Eventos,
+            Footer
         }
     }
 </script>

@@ -5,7 +5,7 @@
                 <b-button type="is-dark" outlined icon-left="star">Da una conferencia o taller</b-button>
             </b-navbar-item>
             <b-navbar-item href="http://u.uma.es/lJ/" target="_blank">
-                <b-button type="is-dark" outlined icon-left="heart">Se un voluntario</b-button>
+                <b-button type="is-dark" outlined icon-left="heart">S&eacute; un voluntario</b-button>
             </b-navbar-item>
             <b-navbar-item href="https://www.twitter.com/hackersweek" target="_blank">
                 <b-button type="is-dark" outlined icon-left="twitter">Twitter</b-button>

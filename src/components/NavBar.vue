@@ -11,7 +11,10 @@
         </template>
         <template slot="end">
             <b-navbar-item href="http://u.uma.es/kz/" target="_blank">
-                <b-button icon-left="star">Da una charla o conferencia</b-button>
+                <b-button icon-left="star" type="is-dark" outlined>Da una charla o conferencia</b-button>
+            </b-navbar-item>
+            <b-navbar-item href="http://u.uma.es/lJ/" target="_blank">
+                <b-button icon-left="heart" type="is-dark" outlined>Voluntariado</b-button>
             </b-navbar-item>
         </template>
     </b-navbar>
@@ -24,6 +27,10 @@
 
     *:hover {
         color: #2196ba !important;
+    }
+
+    button {
+        border: 0 !important;
     }
 </style>
 

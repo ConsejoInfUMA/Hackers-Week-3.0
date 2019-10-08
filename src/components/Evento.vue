@@ -1,5 +1,5 @@
 <template>
-    <div class="column is-6-tablet is-3-desktop">
+    <div class="column is-3-desktop is-6-tablet is-6-mobile">
         <div class="card">
             <div class="card-image">
                 <figure class="image is-square">
@@ -9,7 +9,7 @@
             <div class="card-content">
                 <div class="media">
                     <div class="info media-content">
-                        <p class="title is-5 has-text-dark">{{info.titulo}}</p>
+                        <p class="title is-6 has-text-dark">{{info.titulo}}</p>
                     </div>
                 </div>
                 <div class="content">
@@ -40,7 +40,7 @@
 
     .info {
         overflow: hidden;
-        min-height: 3em;
+        min-height: 2.5em;
     }
     .title {
         max-width: 90%;

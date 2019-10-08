@@ -3,9 +3,9 @@
         <div class="content has-text-centered">
             <p>Nuestras redes sociales</p>
             <div>
-                <b-button icon-left="twitter" type="is-primary">Twitter</b-button>
-                <b-button icon-left="instagram" type="is-dark">Instagram</b-button>
-                <b-button icon-left="facebook" type="">Facebook</b-button>
+                <b-button icon-left="twitter" type="is-primary" outlined>Twitter</b-button>
+                <b-button icon-left="instagram" type="is-primary" outlined>Instagram</b-button>
+                <b-button icon-left="facebook" type="is-primary" outlined>Facebook</b-button>
             </div>
             <br>
             <p>Evento organizado por el Consejo de Estudiantes de la Escuela Tecnica Superior de Ingenieria Informatica de la Universidad de Malaga</p>
@@ -16,6 +16,15 @@
 <style scoped>
     p {
         color: white;
+    }
+
+    button {
+        border: 0;
+        margin-left: 2em;
+    }
+
+    footer {
+        padding: 2em 5em;
     }
 </style>
 

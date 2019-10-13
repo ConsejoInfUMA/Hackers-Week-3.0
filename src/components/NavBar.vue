@@ -2,7 +2,10 @@
     <b-navbar fixed-top="" id="navbar">
         <template slot="start">
             <b-navbar-item href="#hero">
-                <b-icon icon="home"></b-icon>
+                <b-button icon-left="home">Inicio</b-button>
+            </b-navbar-item>
+            <b-navbar-item href="../static/horario.jpg" target="_blank">
+                <b-button icon-left="timetable">Horario</b-button>
             </b-navbar-item>
             <b-navbar-item href="#Conferencias">Conferencias</b-navbar-item>
             <b-navbar-item href="#Talleres">Talleres</b-navbar-item>

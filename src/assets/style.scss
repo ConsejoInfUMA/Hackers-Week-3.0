@@ -6,7 +6,27 @@ html {
 }
 
 * {
-        transition: all 200ms ease-in-out;
+        transition: all 100ms ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+        width: 10px !important;
+}
+      
+/* Track */
+::-webkit-scrollbar-track {
+        background: #000 !important;
+}
+      
+/* Handle */
+::-webkit-scrollbar-thumb {
+        background: #fff !important;
+}
+      
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+        background: #2196ba !important;
 }
 
 // Set your colors

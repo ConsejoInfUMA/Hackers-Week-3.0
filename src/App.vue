@@ -29,6 +29,7 @@
         >
             <Eventos coleccion="rol"/>
         </Seccion>
+        <Patrocinadores />
         <Footer/>
     </div>
 </template>
@@ -38,6 +39,7 @@
     import Hero from '@/components/Hero.vue';
     import Seccion from "@/components/Seccion";
     import Eventos from "@/components/Eventos";
+    import Patrocinadores from "@/components/Patrocinadores"
     import Footer from '@/components/Footer';
 
     export default {
@@ -47,6 +49,7 @@
             Hero,
             Seccion,
             Eventos,
+            Patrocinadores,
             Footer
         }
     }

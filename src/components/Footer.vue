@@ -8,7 +8,7 @@
                 <b-button icon-left="facebook" type="is-primary" outlined>Facebook</b-button>
             </div>
             <br>
-            <p>Evento organizado por el Consejo de Estudiantes de la Escuela Tecnica Superior de Ingenieria Informatica de la Universidad de Malaga</p>
+            <p>Evento organizado por el Consejo de Estudiantes de la Escuela T&eacute;cnica Superior de Ingenier&iacute;a Inform&aacute;tica de la Universidad de M&aacute;laga</p>
         </div>
     </footer>
 </template>

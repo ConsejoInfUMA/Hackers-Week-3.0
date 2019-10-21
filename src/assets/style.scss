@@ -1,11 +1,40 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
+html {
+        scroll-behavior: smooth;
+}
+
+* {
+        transition: all 100ms ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+        width: 10px !important;
+}
+      
+/* Track */
+::-webkit-scrollbar-track {
+        background: #000 !important;
+}
+      
+/* Handle */
+::-webkit-scrollbar-thumb {
+        background: #fff !important;
+}
+      
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+        background: #2196ba !important;
+}
+
 // Set your colors
 // $primary: #8c67ef;
 $primary: #2196ba;
 $primary-invert: findColorInvert($primary);
 $dark: #03151a;
+$dark-invert: findColorInvert($dark);
 // Oficial: 062933
 // 10%: 03151a
 //020e12

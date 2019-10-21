@@ -1,5 +1,5 @@
 <template>
-    <div class="columns is-tablet is-multiline">
+    <div class="columns is-mobile is-multiline">
         <Evento
                 :info="evento" :key="evento.titulo"
                 v-for="evento in eventosSeccion"

@@ -2,7 +2,10 @@
     <b-navbar fixed-top="" id="navbar">
         <template slot="start">
             <b-navbar-item href="#hero">
-                <b-icon icon="home"></b-icon>
+                <b-button icon-left="home">Inicio</b-button>
+            </b-navbar-item>
+            <b-navbar-item href="../static/horario.jpg" target="_blank">
+                <b-button icon-left="timetable">Horario</b-button>
             </b-navbar-item>
             <b-navbar-item href="#Conferencias">Conferencias</b-navbar-item>
             <b-navbar-item href="#Talleres">Talleres</b-navbar-item>
@@ -11,16 +14,10 @@
         </template>
         <template slot="end">
             <b-navbar-item href="http://u.uma.es/kz/" target="_blank">
-                <b-button icon-left="star">Da una charla o conferencia</b-button>
+                <b-button icon-left="star" type="is-dark" outlined>Da una charla o conferencia</b-button>
             </b-navbar-item>
-            <b-navbar-item href="https://www.twitter.com/hackersweek" target="_blank">
-                <b-button icon-left="twitter">Twitter</b-button>
-            </b-navbar-item>
-            <b-navbar-item href="https://www.instagram.com/hackersweek" target="_blank">
-                <b-button icon-left="instagram">Instagram</b-button>
-            </b-navbar-item>
-            <b-navbar-item href="https://www.facebook.com/hackersweek" target="_blank">
-                <b-button icon-left="facebook">Facebook</b-button>
+            <b-navbar-item href="http://u.uma.es/lJ/" target="_blank">
+                <b-button icon-left="heart" type="is-dark" outlined>Voluntariado</b-button>
             </b-navbar-item>
         </template>
     </b-navbar>
@@ -33,6 +30,10 @@
 
     *:hover {
         color: #2196ba !important;
+    }
+
+    button {
+        border: 0 !important;
     }
 </style>
 

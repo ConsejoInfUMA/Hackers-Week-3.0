@@ -10,14 +10,12 @@
                 <div class="media">
                     <div class="info media-content">
                         <p class="title is-6 has-text-dark">{{info.titulo}}</p>
+                        <p class="subtitle is-6">{{fecha(info.fechaHora)}}</p>
                     </div>
-                </div>
-                <div class="content">
-                    <time>{{fecha(info.fechaHora)}}</time>
                 </div>
                 <div class="buttons">
                     <b-button @click="isModalActive = true" class="is-primary max">Saber m&aacute;s</b-button>
-                    <b-button class="is-primary">Registro</b-button>
+                    <b-button class="is-primary" tag="a" :href="info.urlEvento" target="_blank">Registro</b-button>
                     <b-modal :active.sync="isModalActive">
                         <Modal
                                 :descripcion="info.descripcion"
@@ -39,11 +37,12 @@
     }
 
     .info {
-        overflow: hidden;
-        min-height: 2.5em;
+        height: 2em;
     }
     .title {
-        max-width: 90%;
+        width: 13em;
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
     }
 </style>

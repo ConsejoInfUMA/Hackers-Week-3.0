@@ -12,14 +12,6 @@
             <b-navbar-item href="#Videojuegos">Videojuegos</b-navbar-item>
             <b-navbar-item href="#Rol">Rol</b-navbar-item>
         </template>
-        <template slot="end">
-            <b-navbar-item href="http://u.uma.es/kz/" target="_blank">
-                <b-button icon-left="star">Da una charla o conferencia</b-button>
-            </b-navbar-item>
-            <b-navbar-item href="http://u.uma.es/lJ/" target="_blank">
-                <b-button icon-left="heart">Voluntariado</b-button>
-            </b-navbar-item>
-        </template>
     </b-navbar>
 </template>
 

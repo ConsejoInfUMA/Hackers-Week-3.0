@@ -25,6 +25,10 @@
         >
             <Eventos coleccion="rol"/>
         </Seccion>
+        <Seccion
+                seccion="Sorteos"
+        >
+        </Seccion>
         <Footer/>
     </div>
 </template>

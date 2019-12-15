@@ -3,9 +3,9 @@
         <div class="container columns">
             <div class="column is-one-quarter">
                 <p>Consejo de Estudiantes - ETSI Inform&aacute;tica</p>
-                <p>Blvd. Luis Pastrana, 35</p>
+                <p>Blvd. Louis Pasteur, 35</p>
                 <p>Despacho 3.2.B1</p>
-                <p>29027 Campus de Teatinos</p>
+                <p>29071 Campus de Teatinos</p>
                 <p>M&aacute;laga</p>
             </div>
             <div class="column has-text-centered-desktop is-two-quarter">

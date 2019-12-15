@@ -1,26 +1,35 @@
 <template>
     <footer class="footer has-background-dark"> 
-        <div class="content has-text-centered">
-            <p>Nuestras redes sociales</p>
-            <div>
+        <div class="container columns">
+            <div class="column is-one-quarter">
+                <p>Consejo de Estudiantes - ETSI Inform&aacute;tica</p>
+                <p>Blvd. Luis Pastrana, 35</p>
+                <p>Despacho 3.2.B1</p>
+                <p>29027 Campus de Teatinos</p>
+                <p>M&aacute;laga</p>
+            </div>
+            <div class="column has-text-centered-desktop is-two-quarter">
+                <h2 class="title is-5">Nuestras redes sociales</h2>
                 <b-button icon-left="twitter" type="is-primary" outlined>Twitter</b-button>
                 <b-button icon-left="instagram" type="is-primary" outlined>Instagram</b-button>
                 <b-button icon-left="facebook" type="is-primary" outlined>Facebook</b-button>
             </div>
-            <br>
-            <p>Evento organizado por el Consejo de Estudiantes de la Escuela T&eacute;cnica Superior de Ingenier&iacute;a Inform&aacute;tica de la Universidad de M&aacute;laga</p>
+            <div class="column is-one-quarter">
+                <h2 class="title is-5">Nuestros sponsors</h2>
+                    <Patrocinadores />
+            </div>
         </div>
     </footer>
 </template>
 
 <style scoped>
-    p {
+    p, h2 {
         color: white;
     }
 
     button {
         border: 0;
-        margin-left: 2em;
+        margin-right: 2em;
     }
 
     footer {
@@ -29,7 +38,10 @@
 </style>
 
 <script>
-export default {
-    
-}
+    import Patrocinadores from "@/components/Patrocinadores";
+    export default {
+        components: {
+            Patrocinadores
+        }
+    }
 </script>

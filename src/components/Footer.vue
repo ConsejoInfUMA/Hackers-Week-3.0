@@ -1,22 +1,20 @@
 <template>
     <footer class="footer has-background-dark"> 
-        <div class="container columns">
-            <div class="column is-one-quarter">
-                <p>Consejo de Estudiantes - ETSI Inform&aacute;tica</p>
-                <p>Blvd. Louis Pasteur, 35</p>
-                <p>Despacho 3.2.B1</p>
-                <p>29071 Campus de Teatinos</p>
-                <p>M&aacute;laga</p>
-            </div>
-            <div class="column has-text-centered-desktop is-two-quarter">
-                <h2 class="title is-5">Nuestras redes sociales</h2>
-                <b-button icon-left="twitter" type="is-primary" outlined>Twitter</b-button>
-                <b-button icon-left="instagram" type="is-primary" outlined>Instagram</b-button>
-                <b-button icon-left="facebook" type="is-primary" outlined>Facebook</b-button>
-            </div>
-            <div class="column is-one-quarter">
-                <h2 class="title is-5">Nuestros sponsors</h2>
-                    <Patrocinadores />
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <p>Consejo de Estudiantes - ETSI Inform&aacute;tica</p>
+                    <p>Blvd. Louis Pasteur, 35</p>
+                    <p>Despacho 3.2.B1</p>
+                    <p>29071 Campus de Teatinos</p>
+                    <p>M&aacute;laga</p>
+                </div>
+                <div class="column has-text-centered-desktop is-two-quarter">
+                    <h2 class="title is-5">Nuestras redes sociales</h2>
+                    <b-button icon-left="twitter" type="is-primary" outlined>Twitter</b-button>
+                    <b-button icon-left="instagram" type="is-primary" outlined>Instagram</b-button>
+                    <b-button icon-left="facebook" type="is-primary" outlined>Facebook</b-button>
+                </div>
             </div>
         </div>
     </footer>
@@ -36,12 +34,3 @@
         padding: 2em 5em;
     }
 </style>
-
-<script>
-    import Patrocinadores from "@/components/Patrocinadores";
-    export default {
-        components: {
-            Patrocinadores
-        }
-    }
-</script>

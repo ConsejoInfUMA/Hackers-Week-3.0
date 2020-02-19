@@ -11,6 +11,7 @@
             <b-navbar-item href="#Talleres">Talleres</b-navbar-item>
             <b-navbar-item href="#Videojuegos">Videojuegos</b-navbar-item>
             <b-navbar-item href="#Rol">Rol</b-navbar-item>
+            <b-navbar-item href="#Sorteos">Sorteos</b-navbar-item>
         </template>
     </b-navbar>
 </template>

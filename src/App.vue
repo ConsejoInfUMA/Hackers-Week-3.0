@@ -28,6 +28,7 @@
         <Seccion
                 seccion="Sorteos"
         >
+            <Tweet id="twitterdev"/>
         </Seccion>
         <Footer/>
     </div>
@@ -39,6 +40,7 @@
     import Seccion from "@/components/Seccion";
     import Eventos from "@/components/Eventos";
     import Footer from '@/components/Footer';
+    import Tweet from 'vue-tweet-embed';
 
     export default {
         name: 'App',
@@ -47,6 +49,7 @@
             Hero,
             Seccion,
             Eventos,
+            Tweet,
             Footer
         }
     }

@@ -2,31 +2,31 @@
 @import "~bulma/sass/utilities/_all";
 
 html {
-        scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-        transition: all 50ms ease-in-out;
+  transition: all 75ms ease-in-out;
 }
 
 /* width */
 ::-webkit-scrollbar {
-        width: 10px !important;
+  width: 10px !important;
 }
-      
+
 /* Track */
 ::-webkit-scrollbar-track {
-        background: #03151a !important;
+  background: #03151a !important;
 }
-      
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-        background: #fff !important;
+  background: #fff !important;
 }
-      
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-        background: #2196ba !important;
+  background: #2196ba !important;
 }
 
 // Set your colors
@@ -41,14 +41,20 @@ $dark-invert: findColorInvert($dark);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
-        "dark": ($dark, $dark-invert),
-        "primary": ($primary, $primary-invert)
+  "dark": (
+    $dark,
+    $dark-invert
+  ),
+  "primary": (
+    $primary,
+    $primary-invert
+  )
 );
 
 // Links
 $link: $primary;
 $link-invert: $primary-invert;
-$link-focus-border: $primary ;
+$link-focus-border: $primary;
 
 // Import Bulma and Buefy styles
 @import "~bulma";

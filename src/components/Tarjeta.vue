@@ -32,7 +32,7 @@
 						>Registro</b-button
 					>
 					<b-modal :active.sync="isModalActive">
-						<Modal
+						<ModalEvento
 							:descripcion="info.descripcion"
 							:fecha-hora="fecha(info.fechaHora)"
 							:lugar="info.lugar"
@@ -56,17 +56,17 @@
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		word-wrap: break-word;
-		width: 17em;
+		width: 15em;
 	}
 </style>
 
 <script>
-	import Modal from '@/components/Modal';
+	import ModalEvento from '@/components/ModalEvento';
 
 	export default {
 		name: 'Tarjeta',
 		components: {
-			Modal
+			ModalEvento
 		},
 		data: () => ({
 			isModalActive: false

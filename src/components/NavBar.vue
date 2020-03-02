@@ -24,7 +24,7 @@
 
 <style scoped>
 	#navbar {
-		box-shadow: 0 1px 6px #000000aa;
+		box-shadow: 0 0 3px #062933aa;
 	}
 
 	* {

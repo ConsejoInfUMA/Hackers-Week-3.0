@@ -7,11 +7,11 @@
 		</Seccion>
 
 		<Seccion seccion="Talleres">
-			<Eventos coleccion="talleres" />
+			<Eventos coleccion="workshops" />
 		</Seccion>
 
 		<Seccion seccion="Videojuegos">
-			<Eventos coleccion="videojuegos" />
+			<Videojuegos />
 		</Seccion>
 
 		<Seccion seccion="Rol">
@@ -30,6 +30,7 @@
 	import Seccion from '@/components/Seccion';
 	import Eventos from '@/components/Eventos';
 	import Sorteos from '@/components/Sorteos';
+	import Videojuegos from '@/components/Videojuegos';
 	import Footer from '@/components/Footer';
 
 	export default {
@@ -40,6 +41,7 @@
 			Seccion,
 			Eventos,
 			Sorteos,
+			Videojuegos,
 			Footer
 		}
 	};

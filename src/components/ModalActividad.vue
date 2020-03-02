@@ -7,9 +7,7 @@
 				>
 					{{ titulo }}
 				</h1>
-				<p class="subtitle is-size-5-desktop is is-size-6-mobile">
-					Por {{ persona }}
-				</p>
+				<p class="subtitle is-size-5-desktop is is-size-6-mobile"></p>
 				<b-field group-multiline grouped>
 					<div class="control">
 						<b-taglist attached>
@@ -51,7 +49,7 @@
 
 <script>
 	export default {
-		name: 'Modal',
+		name: 'ModalActividad',
 		props: {
 			titulo: String,
 			persona: String,

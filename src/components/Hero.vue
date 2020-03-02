@@ -1,8 +1,8 @@
 <template>
-	<section class="hero is-fullheight is-dark is-bold" id="hero">
+	<section class="hero is-fullheight-with-navbar is-dark is-bold" id="hero">
 		<div class="hero-body">
 			<div class="container">
-				<div class="text has-text-centered">
+				<div class="has-text-centered">
 					<h1 class="title is-size-4-mobile">
 						HACKERS <span class="angles">&lt;&gt;</span> WEEK 7
 					</h1>
@@ -19,16 +19,16 @@
 			:lineOpacity="0.5"
 			:linesDistance="120"
 			:linesWidth="1"
-			:moveSpeed="0.5"
-			:particleOpacity="0.5"
+			:moveSpeed="0.6"
+			:particleOpacity="0.8"
 			:particleSize="2"
 			:particlesNumber="80"
 			color="#2196ba"
 			linesColor="#2196ba"
 			hover-effect="grab"
-			hover-mode="true"
-			style="position: absolute; width: 100%; height: 100%;"
+			hover-mode="false"
 		>
+			re
 		</vue-particles>
 	</section>
 </template>
@@ -41,17 +41,6 @@
 		src: url(../assets/nevis.ttf);
 	}
 
-	.text,
-	.buttons {
-		position: relative;
-		z-index: 1 !important;
-	}
-
-	h1,
-	h2 {
-		color: #f5f5f5 !important;
-	}
-
 	h1 {
 		font-family: nevis, cursive;
 	}
@@ -61,7 +50,12 @@
 	}
 
 	.particles {
-		overflow-y: hidden;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		overflow: hidden;
 		z-index: 0 !important;
 	}
 
@@ -69,22 +63,11 @@
 		color: #2196ba;
 	}
 
-	@media (min-width: 960px) {
-		h1 {
-			font-size: 4em;
-		}
-		h2 {
-			font-size: 2em;
-		}
+	h1 {
+		font-size: 6em;
 	}
-
-	@media (min-width: 1152px) {
-		h1 {
-			font-size: 6em;
-		}
-		h2 {
-			font-size: 3em;
-		}
+	h2 {
+		font-size: 3em;
 	}
 </style>
 

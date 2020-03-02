@@ -1,10 +1,12 @@
 <template>
 	<div class="column is-4-desktop is-6-tablet is-12-mobile">
 		<div class="card">
-			<header class="card-header has-text-dark">
+			<header class="card-header">
 				<div class="card-header-title">
 					<div>
-						<h1 class="title is-6">{{ info.titulo }}</h1>
+						<h1 class="title is-6">
+							{{ info.titulo }}
+						</h1>
 						<h2 class="subtitle is-6">
 							{{ fecha(info.fechaHora) }}
 						</h2>
@@ -66,7 +68,6 @@
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		word-wrap: break-word;
-		width: 100%;
 	}
 </style>
 

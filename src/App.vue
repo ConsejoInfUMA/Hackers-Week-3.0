@@ -15,7 +15,7 @@
 		</Seccion>
 
 		<Seccion seccion="Rol">
-			<Eventos coleccion="rol" />
+			<Rol />
 		</Seccion>
 		<Seccion seccion="Sorteos" class="has-text-centered">
 			<Sorteos />
@@ -31,6 +31,7 @@
 	import Eventos from '@/components/Eventos';
 	import Sorteos from '@/components/Sorteos';
 	import Videojuegos from '@/components/Videojuegos';
+	import Rol from '@/components/Rol';
 	import Footer from '@/components/Footer';
 
 	export default {
@@ -42,6 +43,7 @@
 			Eventos,
 			Sorteos,
 			Videojuegos,
+			Rol,
 			Footer
 		}
 	};

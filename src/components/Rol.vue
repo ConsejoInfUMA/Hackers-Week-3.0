@@ -1,5 +1,12 @@
 <template>
-	<TablaActividades coleccion="videojuegos" label="Videojuego" />
+	<div class="columns">
+		<div class="column is-half">
+			<TablaActividades coleccion="rol" label="Partida" />
+		</div>
+		<div class="column is-half">
+			<img src="" />
+		</div>
+	</div>
 </template>
 
 <style></style>

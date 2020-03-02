@@ -1,47 +1,53 @@
 <template>
-	<div class="column is-3-desktop is-6-tablet is-12-mobile">
+	<div class="column is-4-desktop is-6-tablet is-12-mobile">
 		<div class="card">
+			<header class="card-header has-text-dark">
+				<div class="card-header-title">
+					<div>
+						<h1 class="title is-6">{{ info.titulo }}</h1>
+						<h2 class="subtitle is-6">
+							{{ fecha(info.fechaHora) }}
+						</h2>
+					</div>
+				</div>
+			</header>
 			<div class="card-image">
-				<figure class="image is-square">
+				<figure class="image is-5by4">
 					<img
 						:src="info.imagen"
 						alt="La imagen no se ha podido cargar"
 					/>
 				</figure>
 			</div>
-			<div class="card-content">
-				<div class="media">
-					<div class="info container media-content">
-						<p class="title is-6 has-text-dark">
-							{{ info.titulo }}
-						</p>
-						<p class="subtitle is-6">{{ fecha(info.fechaHora) }}</p>
-					</div>
-				</div>
-				<div class="buttons">
+			<footer class="card-footer">
+				<div class="card-footer-item">
 					<b-button
 						@click="isModalActive = true"
-						class="is-primary max"
+						type="is-primary"
+						expanded
 						>Saber m&aacute;s</b-button
 					>
+				</div>
+				<div class="card-footer-item">
 					<b-button
-						class="is-primary"
+						type="is-primary"
 						tag="a"
 						:href="info.urlEvento"
 						target="_blank"
+						expanded
 						>Registro</b-button
 					>
-					<b-modal :active.sync="isModalActive">
-						<ModalEvento
-							:descripcion="info.descripcion"
-							:fecha-hora="fecha(info.fechaHora)"
-							:lugar="info.lugar"
-							:persona="info.persona"
-							:titulo="info.titulo"
-						/>
-					</b-modal>
 				</div>
-			</div>
+			</footer>
+			<b-modal full-screen :active.sync="isModalActive">
+				<ModalEvento
+					:descripcion="info.descripcion"
+					:fecha-hora="fecha(info.fechaHora)"
+					:lugar="info.lugar"
+					:persona="info.persona"
+					:titulo="info.titulo"
+				/>
+			</b-modal>
 		</div>
 	</div>
 </template>
@@ -51,12 +57,16 @@
 		object-fit: cover;
 	}
 
+	.content {
+		display: grid;
+	}
+
 	.title {
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		word-wrap: break-word;
-		width: 15em;
+		width: 100%;
 	}
 </style>
 

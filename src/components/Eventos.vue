@@ -1,5 +1,5 @@
 <template>
-	<div class="columns is-mobile is-multiline">
+	<div class="columns is-variable is-8 is-mobile is-multiline">
 		<Tarjeta
 			:info="evento"
 			:key="evento.titulo"

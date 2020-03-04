@@ -54,7 +54,7 @@
 		</section>
 		<footer class="card-footer">
 			<div class="card-footer-item">
-				<b-button type="is-primary" expanded @click="$parent.close()"
+				<b-button type="is-primary" @click="$parent.close()"
 					>Cerrar</b-button
 				>
 			</div>

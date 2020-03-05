@@ -32,10 +32,10 @@
 				</div>
 				<div class="card-footer-item">
 					<b-button
-						type="is-primary"
 						tag="a"
-						:href="info.urlEvento"
 						target="_blank"
+						:href="info.urlEvento"
+						type="is-primary"
 						expanded
 						>Registro</b-button
 					>

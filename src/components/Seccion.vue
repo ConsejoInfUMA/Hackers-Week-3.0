@@ -1,7 +1,7 @@
 <template>
 	<section class="section">
 		<div class="container">
-			<h1 class="title has-text-dark">{{ ruta }}</h1>
+			<h1 class="title is-2 has-text-dark">{{ ruta }}</h1>
 			<slot />
 		</div>
 	</section>

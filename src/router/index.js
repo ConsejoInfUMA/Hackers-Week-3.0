@@ -36,9 +36,9 @@ const routes = [
 		component: () => import('@/views/Rol')
 	},
 	{
-		path: '/sorteos',
-		name: 'Sorteos',
-		component: () => import('@/views/Sorteos')
+		path: '/hackaton',
+		name: 'Hackaton',
+		component: () => import('@/views/Hackaton')
 	}
 ];
 

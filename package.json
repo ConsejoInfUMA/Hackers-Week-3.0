@@ -13,11 +13,11 @@
     "buefy": "^0.8.11",
     "core-js": "^2.6.5",
     "firebase": "^6.4.0",
+    "moment": "^2.24.0",
     "sass-loader": "^7.2.0",
     "vue": "^2.6.10",
     "vue-meta": "^2.2.2",
     "vue-router": "^3.1.5",
-    "vue-tweet-embed": "^2.4.0",
     "vuefire": "^2.1.2"
   },
   "devDependencies": {

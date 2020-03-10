@@ -1,14 +1,11 @@
 <template>
-	<section class="hero is-fullheight-with-navbar is-dark is-bold" id="hero">
+	<section class="hero is-fullheight is-dark is-bold" id="hero">
 		<div class="hero-body">
 			<div class="container">
 				<div class="has-text-centered">
 					<figure class="image">
 						<img src="@/assets/logo.svg" />
 					</figure>
-					<!-- <h1 class="title is-size-4-mobile">
-						HACKERS <span class="angles">&lt;&gt;</span> WEEK 7
-					</h1> -->
 					<Countdown event_date="03/30/2020" />
 					<!-- M/D/Y -->
 				</div>
@@ -31,7 +28,6 @@
 			hover-effect="grab"
 			hover-mode="false"
 		>
-			re
 		</vue-particles>
 	</section>
 </template>

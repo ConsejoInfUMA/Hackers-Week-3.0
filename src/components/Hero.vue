@@ -6,7 +6,12 @@
 					<figure class="image">
 						<img src="@/assets/logo.svg" />
 					</figure>
+					<p class="title">
+						Próximamente
+					</p>
+					<!--
 					<Countdown event_date="03/30/2020" />
+					-->
 					<!-- M/D/Y -->
 				</div>
 			</div>
@@ -33,41 +38,41 @@
 </template>
 
 <style scoped>
-	@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 
-	h2 {
-		font-family: 'Fira Sans', sans-serif;
-	}
+h2 {
+	font-family: 'Fira Sans', sans-serif;
+}
 
-	.particles {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-		overflow: hidden;
-		z-index: 0 !important;
-	}
+.particles {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	z-index: 0 !important;
+}
 
-	.angles {
-		color: #2196ba;
-	}
+.angles {
+	color: #2196ba;
+}
 
-	h1 {
-		font-size: 6em;
-	}
-	h2 {
-		font-size: 3em;
-	}
+h1 {
+	font-size: 6em;
+}
+h2 {
+	font-size: 3em;
+}
 </style>
 
 <script>
-	import Countdown from '@/components/Countdown';
+// import Countdown from '@/components/Countdown';
 
-	export default {
-		name: 'hero',
-		components: {
-			Countdown
-		}
-	};
+export default {
+	name: 'hero',
+	components: {
+		// Countdown
+	}
+};
 </script>

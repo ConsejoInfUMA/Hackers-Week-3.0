@@ -22,4 +22,8 @@
 	};
 </script>
 
-<style></style>
+<style>
+	.icon {
+		height: unset;
+	}
+</style>

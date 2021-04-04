@@ -10,11 +10,23 @@
 			>
 				{{ ruta.name }}
 			</b-navbar-item>
+		</template>
+		<template slot="end">
 			<b-navbar-item
 				target="_blank"
-				href="https://firebasestorage.googleapis.com/v0/b/hackers-week-3-0.appspot.com/o/D3KVzH2XkAgA1W0.jpg?alt=media&token=37bc00b9-4cb5-41e6-832a-b25cfc2773d8"
+				href="https://twitter.com/HackersWeek"
 			>
-				Horario
+				<b-icon icon="twitter"></b-icon>
+			</b-navbar-item>
+			<b-navbar-item
+				target="_blank"
+				href="https://www.instagram.com/hackersweek"
+			>
+				<b-icon icon="instagram"></b-icon>
+			</b-navbar-item>
+
+			<b-navbar-item target="_blank" href="#">
+				<b-icon icon="discord"></b-icon>
 			</b-navbar-item>
 		</template>
 	</b-navbar>
@@ -26,17 +38,18 @@
 	}
 
 	.active {
-		border-bottom: 2px solid #2196ba;
-	}
-	/*
-	* {
-		color: #062933 !important;
+		font-weight: bold;
 	}
 
-	*:hover {
-		color: #2196ba !important;
+	.active::before {
+		position: absolute;
+		content: '';
+		height: 5px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #2196ba;
 	}
-	*/
 </style>
 
 <script>

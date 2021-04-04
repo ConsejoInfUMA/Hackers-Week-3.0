@@ -48,20 +48,12 @@
 </template>
 
 <style scoped>
-	img {
-		object-fit: cover;
-	}
-
-	.content {
-		display: grid;
-	}
-
 	.card:hover {
-		box-shadow: 0px 10px 46px 0px rgb(3 21 26 / 12%);
+		box-shadow: 0px 10px 26px 0px rgb(3 21 26 / 12%);
 	}
 
 	.card {
-		box-shadow: 0px 10px 36px 0px rgb(3 21 26 / 6%);
+		box-shadow: 0px 10px 26px 0px rgb(3 21 26 / 8%);
 		transition: all 100ms ease-in;
 	}
 
@@ -73,18 +65,13 @@
 	}
 
 	img {
+		object-fit: cover;
 		border-radius: 15px;
 		box-shadow: 1px 10px 35px 0px rgb(3 21 26 / 6%);
 	}
 
 	.buttons {
 		justify-content: space-between;
-	}
-
-	.title {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		word-wrap: break-word;
 	}
 </style>
 
@@ -118,15 +105,22 @@
 			fecha: f => {
 				const date = new Date(f.seconds * 1000);
 				const dias = [
+					'Domingo',
 					'Lunes',
 					'Martes',
-					'Miercoles',
+					'Miércoles',
 					'Jueves',
-					'Viernes'
+					'Viernes',
+					'Sábado'
 				];
+
 				const mes = 'Abril';
+				let minutes = date.getMinutes();
+				minutes = minutes <= 9 ? '0' + minutes : minutes;
+				let momento = date.getHours() < 12 ? ' AM' : ' PM';
+
 				return (
-					dias[date.getDay() - 1] +
+					dias[date.getDay()] +
 					' ' +
 					date.getDate() +
 					' de ' +
@@ -134,7 +128,8 @@
 					', ' +
 					date.getHours() +
 					':' +
-					date.getMinutes()
+					minutes +
+					momento
 				);
 			}
 		}

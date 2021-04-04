@@ -18,27 +18,14 @@ const routes = [
 		}
 	},
 	{
-		path: '/talleres',
-		name: 'Talleres',
-		component: () => import('@/views/Eventos'),
-		props: {
-			coleccion: 'workshops'
-		}
-	},
-	{
-		path: '/videojuegos',
-		name: 'Videojuegos',
-		component: () => import('@/views/Videojuegos')
+		path: '/torneos',
+		name: 'Torneos',
+		component: () => import('@/views/Torneos')
 	},
 	{
 		path: '/rol',
 		name: 'Rol',
 		component: () => import('@/views/Rol')
-	},
-	{
-		path: '/hackaton',
-		name: 'Hackaton',
-		component: () => import('@/views/Hackaton')
 	}
 ];
 

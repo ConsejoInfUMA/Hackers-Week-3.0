@@ -31,12 +31,17 @@
 
 	.card-image:hover {
 		/* box-shadow: 10px 10px 45px 0px rgb(33 150 186 / 28%); */
-		box-shadow: 1px 10px 45px 0px rgb(3 21 26 / 50%);
+		box-shadow: -10px -10px 45px 0px rgb(3 21 26 / 50%),
+			10px 10px 45px 0px rgb(33 150 186 / 35%);
+		transform: scale(1.01);
+	}
+	.card-image {
+		transition: 0.1s all ease-in;
 	}
 	.card-image,
 	.card-image img {
 		border-radius: 15px;
-		box-shadow: 1px 10px 25px 0px rgb(3 21 26 / 8%);
+		box-shadow: 0px 0px 45px 0px rgb(3 21 26 / 10%);
 	}
 
 	.card-image img {
